@@ -1,0 +1,12 @@
+[
+    {
+        "name": "compliant",
+        "type": ["select_one", "yes_no"],
+        "label": "I have read and agreed to EwA's pool documentation protocol and EwA's field rules of conduct",
+        "appearance": [
+            "w4"
+        ],
+        "required": "yes",
+        "hint": "Please study the EwA VP Protocol prior to surveying - follow proper etiquette as explained in that protocol."
+    }
+]

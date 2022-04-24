@@ -1,0 +1,8 @@
+{
+    "form_title": "JSON Example Survey",
+    "form_id": "json_example_survey",
+    "style": [
+        "dynamic-grid",
+        "pages"
+    ]
+}
