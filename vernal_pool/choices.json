@@ -1,0 +1,168 @@
+{
+    "list_pool_characteristics_aquatic_resource_type_that_best": {
+        "Floodplain_overflow_oxbow_": "Floodplain (overflow/oxbow)",
+        "Forested_wetland": "Forested wetland",
+        "Herbaceous_wetland": "Herbaceous wetland",
+        "Intermittent_stream_reach": "Intermittent stream reach",
+        "Not_known_at_time_of_survey": "Not known at time of survey",
+        "Open_water": "Open water",
+        "Peatland_acidic_fen_or_bog_": "Peatland (acidic fen or bog)",
+        "Shrub_wetland": "Shrub wetland"
+    },
+    "list_pool_characteristics_field_68": {
+        "Pool_part_of_a_pool_complex": "Pool part of a pool complex",
+        "Pool_part_of_wildlife_corridor": "Pool part of wildlife corridor",
+        "Pool_within_larger_wetland_syst": "Pool within larger wetland system",
+        "Upland_depression": "Upland depression"
+    },
+    "list_pool_characteristics_hydrology_inletoutlet": {
+        "No_inlet_outlet": "No inlet/outlet",
+        "Not_known_at_time_of_survey": "Not known at time of survey",
+        "Permanent_inlet_or_outlet_chann": "Permanent inlet or outlet (channel with well-defined banks and permanent flow)",
+        "Temporary_inlet_outlet": "Temporary inlet/outlet"
+    },
+    "list_pool_characteristics_is_water_present_at_present_tim": {
+        "No": "No",
+        "Yes": "Yes"
+    },
+    "list_pool_characteristics_parent_material_that_best_appli": {
+        "Alluvium": "Alluvium",
+        "Coastal_marine_sediments": "Coastal marine sediments",
+        "Dense_till": "Dense till",
+        "Glacial_fluvial_\"outwash\"_": "Glacial fluvial - outwash",
+        "Loose_till": "Loose till",
+        "Peat": "Peat"
+    },
+    "list_pool_characteristics_pool_hydroperiod": {
+        "Not_known_at_time_of_survey": "Not known at time of survey",
+        "Permanent": "Permanent",
+        "Seasonal": "Seasonal",
+        "Semi_permanent": "Semi-permanent"
+    },
+    "list_pool_characteristics_pool_origin": {
+        "Created_wetland_pool": "Created wetland/pool",
+        "Human_made_pool_ditch": "Human-made pool/ditch",
+        "Natural_depression": "Natural depression",
+        "Unknown": "Unknown",
+        "other": "Other"
+    },
+    "list_pool_characteristics_predominante_substrate": {
+        "Mineral_soil": "Mineral soil",
+        "Not_known_at_time_of_survey": "Not known at time of survey",
+        "Organic_matter_peat_muck_": "Organic matter (peat/muck)"
+    },
+    "list_pool_characteristics_water_quality": {
+        "Clear": "Clear",
+        "High_algae_content": "High algae content",
+        "High_turbidity": "High turbidity",
+        "Not_known_at_time_of_survey": "Not known at time of survey",
+        "Tannic": "Tannic"
+    },
+    "list_present_species_obligate_and_ot_are_you_seeing_or_hearing_any_o": {
+        "No": "No",
+        "Yes": "Yes"
+    },
+    "list_present_species_obligate_and_ot_obligate_species_fairy_shrimp": {
+        "No": "No",
+        "Yes": "Yes"
+    },
+    "list_present_species_obligate_and_ot_obligate_species_herp": {
+        "adult_s_": "adults",
+        "eggmass_es_": "eggs",
+        "juvenile_s_": "juveniles"
+    },
+    "list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr": {
+        "0%": "0%",
+        "1_33%": "1 - 33%",
+        "33_67%": "33 - 67%",
+        ">_67%": "> 67%"
+    },
+    "list_rapid_plant_community_assessmen__of_water_surface_shaded_by_tre": {
+        "0%": "0%",
+        "1_33%": "1 - 33%",
+        "33_67%": "33 - 67%",
+        ">_67%": "> 67%"
+    },
+    "list_rapid_plant_community_assessmen_are_there_any_natural_barrier_p": {
+        "No": "No",
+        "Yes": "Yes"
+    },
+    "list_rapid_plant_community_assessmen_do_you_see_any_invasive_plant_s": {
+        "I don't know": "I don't know",
+        "No": "No",
+        "Yes": "Yes"
+    },
+    "list_rapid_plant_community_assessmen_do_you_see_invasive_plant_speci": {
+        "No": "No",
+        "Not sure": "Not sure",
+        "Yes": "Yes"
+    },
+    "list_rapid_plant_community_assessmen_dominant_shrub_species": {
+        "Highbush_blueberry": "Highbush blueberry",
+        "Sweet_pepperbush_": "Sweet pepperbush ",
+        "other": "Other"
+    },
+    "list_rapid_plant_community_assessmen_dominant_tree_species_if_presen": {
+        "Birch_species": "Birch species",
+        "Hickory_species": "Hickory species",
+        "Maple_species": "Maple species",
+        "Oak_species": "Oak species",
+        "Pine_species": "Pine species",
+        "other": "Other"
+    },
+    "list_rapid_plant_community_assessmen_invasive_flora_assessment": {
+        "No": "No",
+        "Not_known": "Not known",
+        "Yes": "Yes"
+    },
+    "list_site_information_property_owner": {
+        "DCR": "DCR",
+        "Town": "Town",
+        "Trustees": "Trustees",
+        "other": "Other"
+    },
+    "list_surveyor_survey_information_predominant_weather": {
+        "Clear": "Clear",
+        "Overcast_Partly_cloudy": "Overcast / Partly cloudy",
+        "Rain": "Rain",
+        "Sleet_snow": "Sleet/snow",
+        "Sunny": "Sunny"
+    },
+    "list_surveyor_survey_information_project_description_i_have_read_and_agreed_to_follo": {
+        "No": "No",
+        "Yes": "Yes"
+    },
+    "list_surveyor_survey_information_survey_methodology": {
+        "Habitat_Assessment": "Habitat Assessment",
+        "Incidental_no_methodology_": "Incidental (no methodology)",
+        "Meander_Survey": "Meander Survey",
+        "other": "Other"
+    },
+    "list_vernal_pool_envelope_and_critic_are_there_one_or_more_barriers_": {
+        "No": "No",
+        "Not_known": "Not known",
+        "Yes": "Yes"
+    },
+    "list_vernal_pool_envelope_and_critic_field_57": {
+        "Aerial_photo_estimate": "Aerial photo estimate",
+        "Field_estimate": "Field estimate",
+        "GIS": "GIS",
+        "other": "Other"
+    },
+    "list_vernal_pool_envelope_and_critic_field_69": {
+        "Agricultural/grassland/meadow": "Agricultural/grassland/meadow",
+        "Emergent_marsh/scrub-shrub_wetl": "Emergent marsh/scrub-shrub wetland",
+        "Forested_wetland": "Forested wetland",
+        "Residential/commercial": "Residential/commercial",
+        "Upland_forest": "Upland forest",
+        "other": "Other"
+    },
+    "list_vernal_pool_envelope_and_critic_field_72": {
+        "Agricultural/grassland/meadow": "Agricultural/grassland/meadow",
+        "Emergent_marsh/scrub-shrub_wetl": "Emergent marsh/scrub-shrub wetland",
+        "Forested_wetland": "Forested wetland",
+        "Residential/commercial": "Residential/commercial",
+        "Upland_forest": "Upland forest",
+        "other": "Other"
+    }
+}

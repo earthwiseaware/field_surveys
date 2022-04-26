@@ -1,0 +1,671 @@
+[
+    {
+        "appearance": "field-list",
+        "name": "generated_group_surveyDescription",
+        "survey": [
+            {
+                "hint": "<p style=\"text-align:center;\"><br></p><p style=\"display:block; margin-left: auto; margin-right: auto;\"><img alt src=\"froggy.png\" width=\"325\" style>    </p><p style=\"text-align:center;\"><strong style=\"color:rgb(204, 232, 204); font-size:18px;\"><u>EwA VP Documentation App</u></strong> <span style=\"font-size:18px;\">\ud83d\udc38</span></p><p style=\"text-align:center;\"><strong style=\"font-size:14px; color:rgb(32, 33, 36);\">\ud83d\udd0f</strong><strong style=\"font-size:14px;\"> Audience</strong></p><p style=\"text-align:center;\"><span style=\"font-size:14px;\">EwA-certified cit-scientists and naturalists.</span></p><p style=\"text-align:center;\"><strong style=\"font-size:14px;\">\u24d8 About EwA</strong></p><p style=\"text-align:center;\"><a href=\"https://www.earthwiseaware.org/\" target=\"_blank\" style=\"color:rgb(255, 194, 102); font-size:14px;\">www.earthwiseaware.org/</a></p>",
+                "name": "generated_note_surveyDescription",
+                "type": "note"
+            }
+        ],
+        "type": "begin group"
+    },
+    {
+        "label": "Submit",
+        "name": "generated_note_form_submit_text",
+        "type": "note"
+    },
+    {
+        "label": "<a target='_blank' style='color:#666666;' href='https://www.esri.com/products/survey123'>Powered by ArcGIS Survey123</a>",
+        "name": "generated_note_form_footer",
+        "type": "note"
+    },
+    {
+        "label": "<p style=\"text-align:center;\"><br></p><p style=\"text-align:center;\"><img src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGZpbGw9IiMzMTg3MkUiIGN4PSIzMiIgY3k9IjMyIiByPSIzMiIvPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0yMi42NjEgMzAuMjQ2bDUuMTgyIDQuOTg3TDQxLjU1MiAyMiA0NSAyNS40NjEgMjcuNzQ3IDQyIDE5IDMzLjQ5OHoiLz48L2c+PC9zdmc+\"></p><p style=\"text-align:center;\"><br></p><p style=\"text-align:center;\"><strong style=\"font-size:16px;\">Great! Your data was sent successfully. Thanks.</strong></p>",
+        "name": "generated_note_prompt_submitted",
+        "type": "note"
+    },
+    {
+        "appearance": "field-list",
+        "label": "Survey & Documenter Information",
+        "name": "surveyor_survey_information",
+        "survey": [
+            {
+                "hint": "<p><span style=\"color:rgb(204, 232, 204);\">This EwA science program focuses on the vernal pools of the Middlesex Fells Reservation that are not yet \u2018certified\u2019 according to the standards of the Massachusetts Natural Heritage and Endangered Species Program (NHESP). The primary goal is to document and certify those potential pools, with our first effort focused on pools located in the Lawrence Woods portion of the Fells and South of Long Pond. </span></p><p><br></p><p><span style=\"color:rgb(204, 232, 204);\">Documentation serves 2 objectives: (1) Gain scientific knowledge about the condition of those pools and the surrounding ecological communities in a landscape that is rapidly changing due to Climate emergency; (2) Obtain evidence for the formal recognition of those pools as certified vernal pools so that they may gain increased protection under the Massachusetts Wetlands Protection Act regulations.</span></p><p><br></p><p><span style=\"color:rgb(204, 232, 204);\">\ud83d\uddfa\ufe0f Interactive map of the pools that EwA is currently monitoring \u00bb </span><a href=\"https://www.google.com/url?q=https://tinyurl.com/ewa-vp-sitemap&amp;sa=D&amp;source=editors&amp;ust=1647489197482130&amp;usg=AOvVaw1Xb9axPiHGZeJQTOo8C7Y6\" target=\"_blank\" style=\"color:rgb(255, 194, 102);\">https://tinyurl.com/ewa-vp-sitemap</a></p><p><br></p><p><span style=\"color:rgb(204, 232, 204);\"><span class=\"ql-cursor\">\ufeff</span>\u24d8 Latest EwA VP Report \u00bb </span><a href=\"https://cutt.ly/EwA-2021-VP-Report\" target=\"_blank\" style=\"color:rgb(255, 194, 102);\">here</a><span style=\"color:rgb(204, 232, 204);\"> </span></p><p><span style=\"color:rgb(204, 232, 204);\">\u24d8 About Earthwise Aware \u00bb </span><a href=\"https://www.google.com/url?q=https://www.earthwiseaware.org/&amp;sa=D&amp;source=editors&amp;ust=1647489197482459&amp;usg=AOvVaw0TDaEiFwbXBkImi3gm-tvb\" target=\"_blank\" style=\"color:rgb(255, 194, 102);\">www.earthwiseaware.org/</a></p><p><br></p><p><span style=\"color:rgb(204, 232, 204);\">Thanks! - EwA Science Team</span></p>",
+                "label": "\u24d8  Project Description",
+                "name": "project_description",
+                "survey": [
+                    {
+                        "appearance": "horizontal-compact",
+                        "bind::esri:fieldLength": 255,
+                        "hint": "<p><span style=\"color:rgb(204, 232, 204);\">\u26a1 Please study the EwA VP Protocol prior to surveying - follow proper etiquette as explained in </span><a href=\"https://cutt.ly/2k3J0zG\" target=\"_blank\" style=\"color:rgb(255, 194, 102);\">that protocol</a><span style=\"color:rgb(204, 232, 204);\">. </span></p><p><br></p>",
+                        "label": "I have read and agreed to follow EwA's pool documentation protocol and EwA's field rules of conduct",
+                        "name": "i_have_read_and_agreed_to_follo",
+                        "required": "yes",
+                        "required_message": "This is a required question",
+                        "type": "select_one list_surveyor_survey_information_project_description_i_have_read_and_agreed_to_follo"
+                    }
+                ],
+                "type": "begin group"
+            },
+            {
+                "bind::esri:fieldLength": 255,
+                "constraint": "regex(.,'^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$')",
+                "label": "Email Contact (of the session leader) ",
+                "name": "email_contact_of_the_session_le",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "text"
+            },
+            {
+                "bind::esri:fieldLength": 255,
+                "hint": "<p>List all the surveyors performing this pool documentation. </p>",
+                "label": "Individual or team ",
+                "name": "individual_or_team_",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "text"
+            },
+            {
+                "bind::esri:fieldLength": 255,
+                "default": "now()",
+                "label": "Date and time of documentation",
+                "name": "date_and_time_of_documentation",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "dateTime"
+            },
+            {
+                "appearance": "autocomplete",
+                "bind::esri:fieldLength": 255,
+                "label": "Predominant weather",
+                "name": "predominant_weather",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "select_one list_surveyor_survey_information_predominant_weather"
+            },
+            {
+                "label": "Estimated temperature at time of survey (Celcius)",
+                "name": "estimated_temperature_at_time_o",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "decimal"
+            },
+            {
+                "appearance": "horizontal",
+                "bind::esri:fieldLength": 1000,
+                "label": "Survey methodology",
+                "name": "survey_methodology",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "select_multiple list_surveyor_survey_information_survey_methodology"
+            },
+            {
+                "label": "Other",
+                "name": "survey_methodology_other",
+                "relevant": "selected(${survey_methodology}, 'other')",
+                "type": "text"
+            }
+        ],
+        "type": "begin group"
+    },
+    {
+        "appearance": "field-list",
+        "hint": "<p>Pool identity  and location - Survey methodology - Weather data</p>",
+        "label": "Site Information",
+        "name": "site_information",
+        "survey": [
+            {
+                "bind::esri:fieldLength": 255,
+                "hint": "<p>According to Matt Gage pool code if known / Reply NA if not known at time of survey&nbsp;</p>",
+                "label": "Pool ID",
+                "name": "pool_id",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "text"
+            },
+            {
+                "bind::esri:fieldLength": 255,
+                "hint": "<p>If known (as listed in MassOliver's Vernal Pool layer)  / Reply NA otherwise</p>",
+                "label": "PVP or CVP ID ",
+                "name": "pvp_or_cvp_id_",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "text"
+            },
+            {
+                "appearance": "hide-input",
+                "body::esri:style": "map=588f0e0acc514c11bc7c898fed9fc651",
+                "hint": "<p>Use the map to locate the pool being documented. Place the pushpin roughly at the center of the pool.</p><p><strong>Tip</strong>: Center the map at your location and then refine the location by placing the pushpin at the center of the pool.</p>",
+                "label": "Pool geographic location",
+                "name": "pool_geographic_location",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "geopoint"
+            },
+            {
+                "appearance": "horizontal",
+                "bind::esri:fieldLength": 255,
+                "default": "DCR",
+                "label": "Property Owner",
+                "name": "property_owner",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "select_one list_site_information_property_owner"
+            },
+            {
+                "label": "Other",
+                "name": "property_owner_other",
+                "relevant": "selected(${property_owner}, 'other')",
+                "type": "text"
+            },
+            {
+                "appearance": "multiline",
+                "bind::esri:fieldLength": 1000,
+                "hint": "<p>Indicate proximity to a trail blaze, include/describe specific topographic markers and ecological features.</p>",
+                "label": "Describe distinctive features visible from or near the pool",
+                "name": "describe_distinctive_features_v",
+                "type": "text"
+            }
+        ],
+        "type": "begin group"
+    },
+    {
+        "appearance": "field-list",
+        "label": "Pool Characteristics",
+        "name": "pool_characteristics",
+        "survey": [
+            {
+                "bind::esri:fieldType": "esriFieldTypeDouble",
+                "constraint": ".>=0",
+                "constraint_message": "Please input a number greater than 0",
+                "hint": "<p>0 if dried at time of survey / leave empty if  not known</p>",
+                "label": "Approximate length (meters)",
+                "name": "approximate_length_meters",
+                "type": "integer"
+            },
+            {
+                "bind::esri:fieldType": "esriFieldTypeDouble",
+                "constraint": ".>=0",
+                "constraint_message": "Please input a number greater than 0",
+                "hint": "<p>0 if dried at time of survey / leave empty if  not known</p>",
+                "label": "Approximate width (meters)",
+                "name": "approximate_width_meters",
+                "type": "integer"
+            },
+            {
+                "bind::esri:fieldType": "esriFieldTypeDouble",
+                "constraint": ".>=0",
+                "constraint_message": "Please input a number greater than 0",
+                "hint": "<p>0 if dried at time of survey / leave empty if  not known</p>",
+                "label": "Approximate depth (feet)",
+                "name": "approximate_depth_feet",
+                "type": "integer"
+            },
+            {
+                "appearance": "multiline",
+                "bind::esri:parameters": "max-size=10",
+                "constraint": "count-selected(.)>=1 and count-selected(.)<=5",
+                "hint": "<p>Take a photo of the full pool if possible. Add special features if any. Take photo of disturbances, litter, and vandalism if encountered. </p>",
+                "label": "Photo of the pool at time of survey",
+                "name": "photo_of_the_pool_at_time_of_su",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "image"
+            },
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 1000,
+                "hint": "<p>Choose all that apply</p>",
+                "label": "Landscape setting",
+                "name": "field_68",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "select_multiple list_pool_characteristics_field_68"
+            },
+            {
+                "appearance": "minimal",
+                "bind::esri:fieldLength": 255,
+                "default": "Natural_depression",
+                "label": "Pool origin",
+                "name": "pool_origin",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "select_one list_pool_characteristics_pool_origin"
+            },
+            {
+                "label": "Other",
+                "name": "pool_origin_other",
+                "relevant": "selected(${pool_origin}, 'other')",
+                "type": "text"
+            },
+            {
+                "appearance": "multiline",
+                "bind::esri:fieldLength": 1000,
+                "hint": "<p>Describe any recent modification to the pool and associated landscape (NA if not applicable)</p>",
+                "label": "Vernal pool condition",
+                "name": "vernal_pool_condition",
+                "type": "text"
+            },
+            {
+                "appearance": "minimal",
+                "bind::esri:fieldLength": 255,
+                "default": "Glacial_fluvial_\"outwash\"_",
+                "label": "Parent material (that best applies to this pool)",
+                "name": "parent_material_that_best_appli",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "select_one list_pool_characteristics_parent_material_that_best_appli"
+            },
+            {
+                "appearance": "minimal",
+                "bind::esri:fieldLength": 255,
+                "default": "Forested_wetland",
+                "label": "Aquatic resource type that best applies to this pool (choose dominant)",
+                "name": "aquatic_resource_type_that_best",
+                "type": "select_one list_pool_characteristics_aquatic_resource_type_that_best"
+            },
+            {
+                "appearance": "minimal",
+                "bind::esri:fieldLength": 255,
+                "default": "Organic_matter_peat_muck_",
+                "label": "Predominante substrate",
+                "name": "predominante_substrate",
+                "type": "select_one list_pool_characteristics_predominante_substrate"
+            },
+            {
+                "appearance": "minimal",
+                "bind::esri:fieldLength": 255,
+                "label": "Pool hydroperiod",
+                "name": "pool_hydroperiod",
+                "type": "select_one list_pool_characteristics_pool_hydroperiod"
+            },
+            {
+                "appearance": "minimal",
+                "bind::esri:fieldLength": 255,
+                "label": "Hydrology: Inlet/outlet",
+                "name": "hydrology_inletoutlet",
+                "type": "select_one list_pool_characteristics_hydrology_inletoutlet"
+            },
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 255,
+                "label": "Is water present at present time?",
+                "name": "is_water_present_at_present_tim",
+                "type": "select_one list_pool_characteristics_is_water_present_at_present_tim"
+            },
+            {
+                "appearance": "minimal",
+                "bind::esri:fieldLength": 255,
+                "label": "Water quality",
+                "name": "water_quality",
+                "relevant": "${is_water_present_at_present_tim}='Yes'",
+                "type": "select_one list_pool_characteristics_water_quality"
+            },
+            {
+                "label": "Pool edge: temperature (Celcius)",
+                "name": "pool_edge_temperature_celcius",
+                "relevant": "${is_water_present_at_present_tim}='Yes'",
+                "type": "decimal"
+            },
+            {
+                "label": "Pool edge: pH",
+                "name": "pool_edge_ph",
+                "relevant": "${is_water_present_at_present_tim}='Yes'",
+                "type": "decimal"
+            },
+            {
+                "label": "Pool center: temperature (Celcius)",
+                "name": "pool_center_temperature_celcius",
+                "relevant": "${is_water_present_at_present_tim}='Yes'",
+                "type": "decimal"
+            },
+            {
+                "label": "Pool center: pH",
+                "name": "pool_center_ph",
+                "relevant": "${is_water_present_at_present_tim}='Yes'",
+                "type": "decimal"
+            },
+            {
+                "bind::esri:parameters": "max-size=10",
+                "body::accept": ".zip, .7z, .tar",
+                "hint": "<p>Delineate the edge of the vernal pool\u2013estimated mean high water\u2013if not already available for this pool (you can use a track mapping app such as GaiaGPS, AllTrails). </p><p><br></p><p>\u26a0\ufe0f Note that there is an issue: ESRI does not support location files at this time! We will file a request that they do. Until then, please add the file to your folder, so that we can process the data from there (or zip it before you add it here)</p>",
+                "label": "Pool edge delineation GPX, KML or KMZ (in a ZIP file)",
+                "name": "pool_edge_delineation_gpx_kml_o",
+                "type": "file"
+            }
+        ],
+        "type": "begin group"
+    },
+    {
+        "appearance": "field-list",
+        "label": "Vernal Pool Envelope and Critical Habitat Area Characteristics",
+        "name": "vernal_pool_envelope_and_critic",
+        "survey": [
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 1000,
+                "hint": "<p>Pick all that apply</p>",
+                "label": "Land-use type within the 100-ft vernal pool envelope",
+                "name": "field_69",
+                "type": "select_multiple list_vernal_pool_envelope_and_critic_field_69"
+            },
+            {
+                "label": "Other",
+                "name": "field_69_other",
+                "relevant": "selected(${field_69}, 'other')",
+                "type": "text"
+            },
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 1000,
+                "hint": "<p>Pick all that apply</p>",
+                "label": "Land-use type within the 100 - 750-ft vernal pool critical terrestrial habitat",
+                "name": "field_72",
+                "type": "select_multiple list_vernal_pool_envelope_and_critic_field_72"
+            },
+            {
+                "label": "Other",
+                "name": "field_72_other",
+                "relevant": "selected(${field_72}, 'other')",
+                "type": "text"
+            },
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 255,
+                "label": "Are there one or more barriers to vernal pool fauna movement within the envelope and/or critical terrestrial habitat?",
+                "name": "are_there_one_or_more_barriers_",
+                "type": "select_one list_vernal_pool_envelope_and_critic_are_there_one_or_more_barriers_"
+            },
+            {
+                "bind::esri:fieldLength": 255,
+                "hint": "<p>Include notes about litter and debris, foor traffic, presence of dogs (leashed and unleashed), presence of invasives, proximity to trails,&nbsp;etc.</p>",
+                "label": "Explain the nature of the barrier(s)",
+                "name": "if_you_answered_yes_above_expla",
+                "relevant": "${are_there_one_or_more_barriers_}='Yes'",
+                "type": "text"
+            },
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 1000,
+                "label": "Is your answer based on: ",
+                "name": "field_57",
+                "relevant": "${are_there_one_or_more_barriers_}='Yes'",
+                "type": "select_multiple list_vernal_pool_envelope_and_critic_field_57"
+            },
+            {
+                "label": "Other",
+                "name": "field_57_other",
+                "relevant": "selected(${field_57}, 'other')",
+                "type": "text"
+            }
+        ],
+        "type": "begin group"
+    },
+    {
+        "appearance": "field-list",
+        "label": "Rapid Plant Community Assessment",
+        "name": "rapid_plant_community_assessmen",
+        "survey": [
+            {
+                "label": "Pool canopy cover at time of survey (%)",
+                "name": "pool_canopy_cover_at_time_of_su",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "decimal"
+            },
+            {
+                "appearance": "minimal",
+                "bind::esri:fieldLength": 255,
+                "label": "% of water surface shaded by trees (> 12')",
+                "name": "_of_water_surface_shaded_by_tre",
+                "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_tre"
+            },
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 1000,
+                "hint": "<p>What seems to be 1-3 species that are prevalent at the site (&gt;30% of all tree sp.)</p>",
+                "label": "Dominant tree species (if present)",
+                "name": "dominant_tree_species_if_presen",
+                "type": "select_multiple list_rapid_plant_community_assessmen_dominant_tree_species_if_presen"
+            },
+            {
+                "label": "Other",
+                "name": "dominant_tree_species_if_presen_other",
+                "relevant": "selected(${dominant_tree_species_if_presen}, 'other')",
+                "type": "text"
+            },
+            {
+                "appearance": "minimal",
+                "bind::esri:fieldLength": 255,
+                "label": "% of water surface shaded by shrubs (> 12')",
+                "name": "_of_water_surface_shaded_by_shr",
+                "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+            },
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 1000,
+                "hint": "<p>What seems to be 1-3 species that are prevalent at the site (&gt;30% of all shrub sp.)</p>",
+                "label": "Dominant shrub species",
+                "name": "dominant_shrub_species",
+                "type": "select_multiple list_rapid_plant_community_assessmen_dominant_shrub_species"
+            },
+            {
+                "label": "Other",
+                "name": "dominant_shrub_species_other",
+                "relevant": "selected(${dominant_shrub_species}, 'other')",
+                "type": "text"
+            },
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 255,
+                "hint": "<p>A natural barrier refers to a physical feature that protects or hinders travel through. Greenbriers (smilax sp.) for instance are good help to shelter a pool from wandering humans and dogs.</p>",
+                "label": "Are there any natural barrier preventing pool access (by humans)?",
+                "name": "are_there_any_natural_barrier_p",
+                "type": "select_one list_rapid_plant_community_assessmen_are_there_any_natural_barrier_p"
+            },
+            {
+                "appearance": "multiline",
+                "bind::esri:fieldLength": 1000,
+                "label": "Please describe the natural barrier",
+                "name": "please_describe_the_natural_bar",
+                "relevant": "${are_there_any_natural_barrier_p}='Yes'",
+                "type": "text"
+            },
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 255,
+                "label": "Are invasive plant species present?",
+                "name": "do_you_see_any_invasive_plant_s",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "select_one list_rapid_plant_community_assessmen_do_you_see_any_invasive_plant_s"
+            },
+            {
+                "appearance": "table-list",
+                "label": "Invasive Flora Assessment",
+                "name": "invasive_flora_assessment",
+                "relevant": "${do_you_see_any_invasive_plant_s}='Yes'",
+                "survey": [
+                    {
+                        "bind::esri:fieldLength": 255,
+                        "label": "Multiflora rosa",
+                        "name": "field_46_0",
+                        "type": "select_one list_rapid_plant_community_assessmen_invasive_flora_assessment"
+                    },
+                    {
+                        "bind::esri:fieldLength": 255,
+                        "label": "Glossy buckthorn",
+                        "name": "field_46_1",
+                        "type": "select_one list_rapid_plant_community_assessmen_invasive_flora_assessment"
+                    },
+                    {
+                        "bind::esri:fieldLength": 255,
+                        "label": "Garlic mustard",
+                        "name": "field_46_2",
+                        "type": "select_one list_rapid_plant_community_assessmen_invasive_flora_assessment"
+                    },
+                    {
+                        "bind::esri:fieldLength": 255,
+                        "label": "Japanese knotweed",
+                        "name": "field_46_4",
+                        "type": "select_one list_rapid_plant_community_assessmen_invasive_flora_assessment"
+                    },
+                    {
+                        "bind::esri:fieldLength": 255,
+                        "label": "Barberry species (Japanese or European)",
+                        "name": "field_46_3",
+                        "type": "select_one list_rapid_plant_community_assessmen_invasive_flora_assessment"
+                    }
+                ],
+                "type": "begin group"
+            },
+            {
+                "appearance": "multiline",
+                "bind::esri:fieldLength": 1000,
+                "hint": "<p>Describe for each invasive their extent: is that a sparse or dense patch, where in proximity of the pool is it located, etc.</p>",
+                "label": "If there are invasive plants at the location, please detail further",
+                "name": "if_there_are_invasive_plants_at",
+                "relevant": "${do_you_see_any_invasive_plant_s}='Yes'",
+                "type": "text"
+            },
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 255,
+                "label": "Do you see other species of invasive plant species than the ones listed above? ",
+                "name": "do_you_see_invasive_plant_speci",
+                "relevant": "${do_you_see_any_invasive_plant_s}='Yes'",
+                "type": "select_one list_rapid_plant_community_assessmen_do_you_see_invasive_plant_speci"
+            },
+            {
+                "appearance": "multiline",
+                "bind::esri:fieldLength": 1000,
+                "hint": "<p>If the species of invasive was not listed above, list it here. Describe for each invasive their extent: sparse, dense, where, etc. If you're not sure provide a few clues (describe what you see if possible).</p>",
+                "label": "If there are invasive plants at the location, please detail further",
+                "name": "if_there_are_invasive_at_the_lo",
+                "relevant": "${do_you_see_invasive_plant_speci}='Yes'",
+                "type": "text"
+            },
+            {
+                "appearance": "multiline",
+                "bind::esri:fieldLength": 1000,
+                "hint": "<p>Are there broadleaf herb species (including cranberries), graminoids? List the dominant, and the non-dominants of all categories. Also indicate if possible the % of the pool bottom that is covered by plants. </p>",
+                "label": "General description of the plant community at location",
+                "name": "general_description_of_the_plan",
+                "type": "text"
+            }
+        ],
+        "type": "begin group"
+    },
+    {
+        "appearance": "field-list",
+        "label": "Present Species (Obligate and Others)",
+        "name": "present_species_obligate_and_ot",
+        "survey": [
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 255,
+                "hint": "<p>Vernal pool obligate species include: salamanders, wood frogs, fairy shrimp.</p>",
+                "label": "Do you hear or see any obligate species? ",
+                "name": "are_you_seeing_or_hearing_any_o",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "select_one list_present_species_obligate_and_ot_are_you_seeing_or_hearing_any_o"
+            },
+            {
+                "appearance": "table-list",
+                "hint": "<p>For any recorded species, pick the dominant phase observed, then add quantities of all stages observed in the details section (2 down) below the table </p>",
+                "label": "Obligate species - Herp",
+                "name": "obligate_species_herp",
+                "relevant": "${are_you_seeing_or_hearing_any_o}='Yes'",
+                "survey": [
+                    {
+                        "bind::esri:fieldLength": 255,
+                        "label": "Wood frog",
+                        "name": "obligate_species_herp_wood_frog",
+                        "type": "select_one list_present_species_obligate_and_ot_obligate_species_herp"
+                    },
+                    {
+                        "bind::esri:fieldLength": 255,
+                        "label": "Spotted salamander",
+                        "name": "field_16_1",
+                        "type": "select_one list_present_species_obligate_and_ot_obligate_species_herp"
+                    },
+                    {
+                        "bind::esri:fieldLength": 255,
+                        "label": "Marbled salamander",
+                        "name": "field_16_2",
+                        "type": "select_one list_present_species_obligate_and_ot_obligate_species_herp"
+                    },
+                    {
+                        "bind::esri:fieldLength": 255,
+                        "label": "Other ",
+                        "name": "obligate_species_herp_other_",
+                        "type": "select_one list_present_species_obligate_and_ot_obligate_species_herp"
+                    }
+                ],
+                "type": "begin group"
+            },
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 255,
+                "label": "Obligate species - Fairy shrimp",
+                "name": "obligate_species_fairy_shrimp",
+                "relevant": "${are_you_seeing_or_hearing_any_o}='Yes'",
+                "type": "select_one list_present_species_obligate_and_ot_obligate_species_fairy_shrimp"
+            },
+            {
+                "appearance": "multiline",
+                "bind::esri:fieldLength": 1000,
+                "hint": "<p>Number of individuals, eggmasses, what developmental phase, etc.</p>",
+                "label": "If you recorded any species above, add details",
+                "name": "if_you_recorded_any_species_abo",
+                "relevant": "${are_you_seeing_or_hearing_any_o}='Yes'",
+                "type": "text"
+            },
+            {
+                "appearance": "multiline",
+                "bind::esri:parameters": "max-size=10",
+                "body::esri:style": "method=camera",
+                "constraint": "count-selected(.)>=1 and count-selected(.)<=10",
+                "hint": "<p>Take one photo per species recorded (for visual sightings).</p>",
+                "label": "Species photos",
+                "name": "species_photos",
+                "relevant": "${are_you_seeing_or_hearing_any_o}='Yes'",
+                "type": "image"
+            },
+            {
+                "appearance": "multiline",
+                "bind::esri:fieldLength": 1000,
+                "hint": "<p>List what species (and their developmental stage) and how many of any of other herp species you've encountered. Herp species include: American toad, gray tree frog, green frog, bull frog, spring peeper, painted turtle, snapping turtle, spotted turtle. Non-herp species include avian species, invertebrates, etc.</p>",
+                "label": "Any other herp and non herp species observed?",
+                "name": "any_other_herp_and_non_herp_spe",
+                "type": "text"
+            }
+        ],
+        "type": "begin group"
+    },
+    {
+        "appearance": "field-list",
+        "hint": "<p>From Earthwise Aware: Thanks for your work and time! We appreciate it greatly!&nbsp;</p>",
+        "label": "End-of Session Info",
+        "name": "end_of_session_info",
+        "survey": [
+            {
+                "bind::esri:fieldType": "esriFieldTypeDouble",
+                "label": "Session duration (minutes)",
+                "name": "session_duration",
+                "type": "integer"
+            },
+            {
+                "appearance": "multiline",
+                "bind::esri:fieldLength": 1000,
+                "label": "If you have anything else that you want to add or comment about. This is your chance!",
+                "name": "if_you_have_anything_else_that_",
+                "type": "text"
+            }
+        ],
+        "type": "begin group"
+    }
+]
