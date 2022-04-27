@@ -434,19 +434,55 @@
                 "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_tre"
             },
             {
-                "appearance": "w4 horizontal-compact",
-                "bind::esri:fieldLength": 1000,
-                "hint": "<p>What seems to be 1-3 species that are prevalent at the site (&gt;30% of all tree sp.)</p>",
+                "appearance": "w4:4",
                 "label": "Dominant tree species (if present)",
-                "name": "dominant_tree_species_if_presen",
-                "type": "select_multiple list_rapid_plant_community_assessmen_dominant_tree_species_if_presen"
-            },
-            {
-                "label": "Other",
-                "name": "dominant_tree_species_if_presen_other",
-                "relevant": "selected(${dominant_tree_species_if_presen}, 'other')",
-                "type": "text",
-                "appearance": "w4"
+                "name": "dominant_tree_cover",
+                "survey": [
+                    {
+                        "appearance": "w4 horizontal",
+                        "label": "Birch species",
+                        "name": "dominant_tree_cover_birch",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                    },
+                    {
+                        "appearance": "w4 horizontal",
+                        "label": "HIckory species",
+                        "name": "dominant_tree_cover_hickory",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                    },
+                    {
+                        "appearance": "w4 horizontal",
+                        "label": "Maple species",
+                        "name": "dominant_tree_cover_maple",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                    },
+                    {
+                        "appearance": "w4 horizontal",
+                        "label": "Oak species",
+                        "name": "dominant_tree_cover_oak",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                    },
+                    {
+                        "appearance": "w4 horizontal",
+                        "label": "Pine species",
+                        "name": "dominant_tree_cover_pine",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                    },
+                    {
+                        "appearance": "w4 horizontal",
+                        "label": "Other species",
+                        "name": "dominant_tree_cover_other",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                    },
+                    {
+                        "label": "Other",
+                        "name": "dominant_tree_species_if_presen_other",
+                        "type": "text",
+                        "hint": "If you selected other, please specify the species.",
+                        "appearance": "w4"
+                    }
+                ],
+                "type": "begin group"
             },
             {
                 "appearance": "w4 minimal",
