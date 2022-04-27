@@ -551,44 +551,39 @@
             },
             {
                 "appearance": "w4:4",
-                "label": "Invasive Flora Assessment",
-                "name": "invasive_flora_assessment",
+                "label": "Invasive species (if present)",
+                "name": "invasive_cover",
                 "relevant": "${do_you_see_any_invasive_plant_s}='Yes'",
                 "survey": [
                     {
-                        "bind::esri:fieldLength": 255,
+                        "appearance": "w4 horizontal",
                         "label": "Multiflora rosa",
-                        "name": "field_46_0",
-                        "type": "select_one list_rapid_plant_community_assessmen_invasive_flora_assessment",
-                        "appearance": "w4"
+                        "name": "invasive_cover_multiflora_rosa",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
                     },
                     {
-                        "bind::esri:fieldLength": 255,
+                        "appearance": "w4 horizontal",
                         "label": "Glossy buckthorn",
-                        "name": "field_46_1",
-                        "type": "select_one list_rapid_plant_community_assessmen_invasive_flora_assessment",
-                        "appearance": "w4"
+                        "name": "invasive_cover_glossy_buckthorn",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
                     },
                     {
-                        "bind::esri:fieldLength": 255,
+                        "appearance": "w4 horizontal",
                         "label": "Garlic mustard",
-                        "name": "field_46_2",
-                        "type": "select_one list_rapid_plant_community_assessmen_invasive_flora_assessment",
-                        "appearance": "w4"
+                        "name": "invasive_cover_garlic_mustard",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
                     },
                     {
-                        "bind::esri:fieldLength": 255,
+                        "appearance": "w4 horizontal",
                         "label": "Japanese knotweed",
-                        "name": "field_46_4",
-                        "type": "select_one list_rapid_plant_community_assessmen_invasive_flora_assessment",
-                        "appearance": "w4"
+                        "name": "invasive_cover_japanese_knotweed",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
                     },
                     {
-                        "bind::esri:fieldLength": 255,
+                        "appearance": "w4 horizontal",
                         "label": "Barberry species (Japanese or European)",
-                        "name": "field_46_3",
-                        "type": "select_one list_rapid_plant_community_assessmen_invasive_flora_assessment",
-                        "appearance": "w4"
+                        "name": "invasive_cover_barberry",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
                     }
                 ],
                 "type": "begin group"
