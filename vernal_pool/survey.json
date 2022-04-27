@@ -706,12 +706,11 @@
                 "type": "begin group"
             },
             {
-                "appearance": "w4 horizontal-compact",
-                "bind::esri:fieldLength": 255,
+                "appearance": "w4",
                 "label": "Obligate species - Fairy shrimp",
                 "name": "obligate_species_fairy_shrimp",
                 "relevant": "${are_you_seeing_or_hearing_any_o}='Yes'",
-                "type": "select_one list_present_species_obligate_and_ot_obligate_species_fairy_shrimp"
+                "type": "integer"
             },
             {
                 "appearance": "w4 multiline",
