@@ -1,5 +1,5 @@
 {
     "form_id": "survey",
     "form_title": "<p style=\"text-align:center;\" title=\"EwA Vernal Pool Survey\">EwA Vernal Pool Survey</p>",
-    "style": "pages"
+    "style": "dynamic-grid pages"
 }
