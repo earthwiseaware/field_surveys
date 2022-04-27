@@ -164,5 +164,9 @@
         "Residential/commercial": "Residential/commercial",
         "Upland_forest": "Upland forest",
         "other": "Other"
+    },
+    "yes_no": {
+        "yes": "Yes",
+        "no": "No"
     }
 }

@@ -599,32 +599,108 @@
                 "relevant": "${are_you_seeing_or_hearing_any_o}='Yes'",
                 "survey": [
                     {
-                        "bind::esri:fieldLength": 255,
+                        "type": "begin group",
+                        "appearance": "w4:4",
                         "label": "Wood frog",
                         "name": "obligate_species_herp_wood_frog",
-                        "type": "select_one list_present_species_obligate_and_ot_obligate_species_herp",
-                        "appearance": "w4"
+                        "survey": [
+                            {
+                                "type": "select_one yes_no",
+                                "label": "Eggmasses",
+                                "name": "obligate_species_herp_wood_frog_eggmasses",
+                                "appearance": "w2"
+                            },
+                            {
+                                "type": "integer",
+                                "label": "Juveniles",
+                                "name": "obligate_species_herp_wood_frog_juveniles",
+                                "appearance": "w1"
+                            },
+                            {
+                                "type": "integer",
+                                "label": "Adults",
+                                "name": "obligate_species_herp_wood_frog_adults",
+                                "appearance": "w1"
+                            }
+                        ]
                     },
                     {
-                        "bind::esri:fieldLength": 255,
+                        "type": "begin group",
+                        "appearance": "w4:4",
                         "label": "Spotted salamander",
-                        "name": "field_16_1",
-                        "type": "select_one list_present_species_obligate_and_ot_obligate_species_herp",
-                        "appearance": "w4"
+                        "name": "obligate_species_herp_spotted_salamander",
+                        "survey": [
+                            {
+                                "type": "select_one yes_no",
+                                "label": "Eggmasses",
+                                "name": "obligate_species_herp_spotted_salamander_eggmasses",
+                                "appearance": "w2"
+                            },
+                            {
+                                "type": "integer",
+                                "label": "Juveniles",
+                                "name": "obligate_species_herp_spotted_salamander_juveniles",
+                                "appearance": "w1"
+                            },
+                            {
+                                "type": "integer",
+                                "label": "Adults",
+                                "name": "obligate_species_herp_spotted_salamander_adults",
+                                "appearance": "w1"
+                            }
+                        ]
                     },
                     {
-                        "bind::esri:fieldLength": 255,
+                        "type": "begin group",
+                        "appearance": "w4:4",
                         "label": "Marbled salamander",
-                        "name": "field_16_2",
-                        "type": "select_one list_present_species_obligate_and_ot_obligate_species_herp",
-                        "appearance": "w4"
+                        "name": "obligate_species_herp_marbled_salamander",
+                        "survey": [
+                            {
+                                "type": "select_one yes_no",
+                                "label": "Eggmasses",
+                                "name": "obligate_species_herp_marbled_salamander_eggmasses",
+                                "appearance": "w2"
+                            },
+                            {
+                                "type": "integer",
+                                "label": "Juveniles",
+                                "name": "obligate_species_herp_marbled_salamander_juveniles",
+                                "appearance": "w1"
+                            },
+                            {
+                                "type": "integer",
+                                "label": "Adults",
+                                "name": "obligate_species_herp_marbled_salamander_adults",
+                                "appearance": "w1"
+                            }
+                        ]
                     },
                     {
-                        "bind::esri:fieldLength": 255,
-                        "label": "Other ",
-                        "name": "obligate_species_herp_other_",
-                        "type": "select_one list_present_species_obligate_and_ot_obligate_species_herp",
-                        "appearance": "w4"
+                        "type": "begin group",
+                        "appearance": "w4:4",
+                        "label": "Other",
+                        "name": "obligate_species_herp_other",
+                        "survey": [
+                            {
+                                "type": "select_one yes_no",
+                                "label": "Eggmasses",
+                                "name": "obligate_species_herp_other_eggmasses",
+                                "appearance": "w2"
+                            },
+                            {
+                                "type": "integer",
+                                "label": "Juveniles",
+                                "name": "obligate_species_herp_other_juveniles",
+                                "appearance": "w1"
+                            },
+                            {
+                                "type": "integer",
+                                "label": "Adults",
+                                "name": "obligate_species_herp_other_adults",
+                                "appearance": "w1"
+                            }
+                        ]
                     }
                 ],
                 "type": "begin group"
