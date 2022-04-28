@@ -442,37 +442,43 @@
                         "appearance": "w4 horizontal",
                         "label": "Birch species",
                         "name": "dominant_tree_cover_birch",
-                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
                         "appearance": "w4 horizontal",
                         "label": "Hickory species",
                         "name": "dominant_tree_cover_hickory",
-                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
                         "appearance": "w4 horizontal",
                         "label": "Maple species",
                         "name": "dominant_tree_cover_maple",
-                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
                         "appearance": "w4 horizontal",
                         "label": "Oak species",
                         "name": "dominant_tree_cover_oak",
-                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
                         "appearance": "w4 horizontal",
                         "label": "Pine species",
                         "name": "dominant_tree_cover_pine",
-                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
                         "appearance": "w4 horizontal",
                         "label": "Other species",
                         "name": "dominant_tree_cover_other",
-                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
                         "label": "Other",
@@ -500,19 +506,22 @@
                         "appearance": "w4 horizontal",
                         "label": "Highbush blueberry",
                         "name": "dominant_shrub_cover_highbush_bluerberry",
-                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
                         "appearance": "w4 horizontal",
                         "label": "Sweet pepperbush",
                         "name": "dominant_shrub_cover_sweet_pepperbush",
-                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
                         "appearance": "w4 horizontal",
                         "label": "Other species",
                         "name": "dominant_shrub_cover_other",
-                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
                         "label": "Other",
@@ -559,31 +568,36 @@
                         "appearance": "w4 horizontal",
                         "label": "Multiflora rosa",
                         "name": "invasive_cover_multiflora_rosa",
-                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
                         "appearance": "w4 horizontal",
                         "label": "Glossy buckthorn",
                         "name": "invasive_cover_glossy_buckthorn",
-                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
                         "appearance": "w4 horizontal",
                         "label": "Garlic mustard",
                         "name": "invasive_cover_garlic_mustard",
-                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
                         "appearance": "w4 horizontal",
                         "label": "Japanese knotweed",
                         "name": "invasive_cover_japanese_knotweed",
-                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
                         "appearance": "w4 horizontal",
                         "label": "Barberry species (Japanese or European)",
                         "name": "invasive_cover_barberry",
-                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     }
                 ],
                 "type": "begin group"
@@ -656,18 +670,21 @@
                             {
                                 "type": "select_one yes_no",
                                 "label": "Eggmasses",
+                                "default": "no",
                                 "name": "obligate_species_herp_wood_frog_eggmasses",
                                 "appearance": "w2"
                             },
                             {
                                 "type": "integer",
                                 "label": "Juveniles",
+                                "default": 0,
                                 "name": "obligate_species_herp_wood_frog_juveniles",
                                 "appearance": "w1"
                             },
                             {
                                 "type": "integer",
                                 "label": "Adults",
+                                "default": 0,
                                 "name": "obligate_species_herp_wood_frog_adults",
                                 "appearance": "w1"
                             }
@@ -682,18 +699,21 @@
                             {
                                 "type": "select_one yes_no",
                                 "label": "Eggmasses",
+                                "default": "no",
                                 "name": "obligate_species_herp_spotted_salamander_eggmasses",
                                 "appearance": "w2"
                             },
                             {
                                 "type": "integer",
                                 "label": "Juveniles",
+                                "default": 0,
                                 "name": "obligate_species_herp_spotted_salamander_juveniles",
                                 "appearance": "w1"
                             },
                             {
                                 "type": "integer",
                                 "label": "Adults",
+                                "default": 0,
                                 "name": "obligate_species_herp_spotted_salamander_adults",
                                 "appearance": "w1"
                             }
@@ -708,18 +728,21 @@
                             {
                                 "type": "select_one yes_no",
                                 "label": "Eggmasses",
+                                "default": "no",
                                 "name": "obligate_species_herp_marbled_salamander_eggmasses",
                                 "appearance": "w2"
                             },
                             {
                                 "type": "integer",
                                 "label": "Juveniles",
+                                "default": 0,
                                 "name": "obligate_species_herp_marbled_salamander_juveniles",
                                 "appearance": "w1"
                             },
                             {
                                 "type": "integer",
                                 "label": "Adults",
+                                "default": 0,
                                 "name": "obligate_species_herp_marbled_salamander_adults",
                                 "appearance": "w1"
                             }
@@ -734,18 +757,21 @@
                             {
                                 "type": "select_one yes_no",
                                 "label": "Eggmasses",
+                                "default": "no",
                                 "name": "obligate_species_herp_other_eggmasses",
                                 "appearance": "w2"
                             },
                             {
                                 "type": "integer",
                                 "label": "Juveniles",
+                                "default": 0,
                                 "name": "obligate_species_herp_other_juveniles",
                                 "appearance": "w1"
                             },
                             {
                                 "type": "integer",
                                 "label": "Adults",
+                                "default": 0,
                                 "name": "obligate_species_herp_other_adults",
                                 "appearance": "w1"
                             }
@@ -759,6 +785,14 @@
                 "label": "Obligate species - Fairy shrimp",
                 "name": "obligate_species_fairy_shrimp",
                 "relevant": "${are_you_seeing_or_hearing_any_o}='Yes'",
+                "type": "select_one yes_no",
+                "default": "no"
+            },
+            {
+                "appearance": "w4",
+                "label": "Fairy shrimp count",
+                "name": "obligate_species_fairy_shrimp_count",
+                "relevant": "${obligate_species_fairy_shrimp}='yes'",
                 "type": "integer"
             },
             {
