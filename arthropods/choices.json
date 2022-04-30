@@ -1,0 +1,26 @@
+{
+    "yes_no": {
+        "yes": "Yes",
+        "no": "No"
+    },
+    "arthropod_order": {
+        "coleoptera": "<img src=\"coleoptera_small.png\"/><p>Coleoptera</p>",
+        "lepidotera": "<img src=\"lepidoptera_small.png\" width=\"10px\" /><p>Lepidoptera</p>",
+        "hymenoptera": "<img src=\"hymenoptera_small.png\" width=\"10px\" /><p>Hymenoptera</p>"
+    },
+    "association_types": {
+        "feeding": "Feeding",
+        "larval_host": "Larval Host",
+        "cover": "Cover"
+    },
+    "host_groups": {
+        "woody": "Woody plants",
+        "aquatic": "Aquatic plants",
+        "grass": "Grasslike plants",
+        "orchid": "Orchids",
+        "fern": "Ferns",
+        "fungus": "Fungi",
+        "other": "Other",
+        "unknown": "Unknown"
+    }
+}

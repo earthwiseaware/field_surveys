@@ -1,0 +1,101 @@
+[
+    {
+        "type": "begin group",
+        "appearance": "field-list",
+        "label": "The Assocation",
+        "name": "association_page",
+        "survey":[
+            {
+                "type": "begin group",
+                "appearance": "w4:4",
+                "label": "The Arthropod",
+                "name": "arthropod_info",
+                "survey": [
+                    {
+                        "type": "begin repeat",
+                        "label": "Photos",
+                        "name": "arthropod_photos",
+                        "appearance": "w4:4",
+                        "required": "yes",
+                        "survey": [
+                            {
+                                "type": "image",
+                                "label": "Take a photo",
+                                "hint": "Try to get as many angles as possible.",
+                                "name": "arthropod_photo"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "select_one arthropod_order",
+                        "label": "Arthropod Classification",
+                        "name": "arthropod_classification",
+                        "required": "yes",
+                        "appearance": "w4 minimal"
+                    }
+                ]
+            },
+            {
+                "type": "begin group",
+                "appearance": "w4:4",
+                "label": "The Host",
+                "name": "host_info",
+                "survey": [
+                    {
+                        "type": "begin repeat",
+                        "label": "Photos",
+                        "name": "host_photos",
+                        "required": "yes",
+                        "appearance": "w4:4",
+                        "survey": [
+                            {
+                                "type": "image",
+                                "label": "Take a photo",
+                                "hint": "Get pictures of the leaves and flowers/fruit (if present) as well as the full organism.",
+                                "name": "host_photo"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "select_one host_groups",
+                        "label": "Host Classification",
+                        "name": "host_classification",
+                        "required": "yes",
+                        "appearance": "w4 minimal"
+                    }
+                ]
+            },
+            {
+                "type": "select_multiple association_types",
+                "label": "What's the Association?",
+                "name": "association_type",
+                "hint": "Select all that apply.",
+                "required": "yes",
+                "appearance": "w4"
+            },
+            {
+                "type": "geopoint",
+                "label": "Location",
+                "name": "location",
+                "appearance": "w4"
+            },
+            {
+                "type": "decimal",
+                "label": "Temperature (C)",
+                "name": "temperature",
+                "appearance": "w4"
+            },
+            {
+                "type": "text",
+                "label": "Notes",
+                "name": "notes",
+                "hint": "Any other notes?",
+                "appearance": "w4 multiline"
+            },
+            {
+                "type": "start",
+                "name": "start"
+            }
+        ]
+    }
+]
