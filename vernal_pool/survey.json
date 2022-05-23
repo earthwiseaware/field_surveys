@@ -434,19 +434,61 @@
                 "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_tre"
             },
             {
-                "appearance": "w4 horizontal-compact",
-                "bind::esri:fieldLength": 1000,
-                "hint": "<p>What seems to be 1-3 species that are prevalent at the site (&gt;30% of all tree sp.)</p>",
+                "appearance": "w4:4",
                 "label": "Dominant tree species (if present)",
-                "name": "dominant_tree_species_if_presen",
-                "type": "select_multiple list_rapid_plant_community_assessmen_dominant_tree_species_if_presen"
-            },
-            {
-                "label": "Other",
-                "name": "dominant_tree_species_if_presen_other",
-                "relevant": "selected(${dominant_tree_species_if_presen}, 'other')",
-                "type": "text",
-                "appearance": "w4"
+                "name": "dominant_tree_cover",
+                "survey": [
+                    {
+                        "appearance": "w4 horizontal",
+                        "label": "Birch species",
+                        "name": "dominant_tree_cover_birch",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
+                    },
+                    {
+                        "appearance": "w4 horizontal",
+                        "label": "Hickory species",
+                        "name": "dominant_tree_cover_hickory",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
+                    },
+                    {
+                        "appearance": "w4 horizontal",
+                        "label": "Maple species",
+                        "name": "dominant_tree_cover_maple",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
+                    },
+                    {
+                        "appearance": "w4 horizontal",
+                        "label": "Oak species",
+                        "name": "dominant_tree_cover_oak",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
+                    },
+                    {
+                        "appearance": "w4 horizontal",
+                        "label": "Pine species",
+                        "name": "dominant_tree_cover_pine",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
+                    },
+                    {
+                        "appearance": "w4 horizontal",
+                        "label": "Other species",
+                        "name": "dominant_tree_cover_other",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
+                    },
+                    {
+                        "label": "Other",
+                        "name": "dominant_tree_species_if_presen_other",
+                        "type": "text",
+                        "hint": "If you selected other, please specify the species.",
+                        "appearance": "w4"
+                    }
+                ],
+                "type": "begin group"
             },
             {
                 "appearance": "w4 minimal",
@@ -456,19 +498,40 @@
                 "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr"
             },
             {
-                "appearance": "w4 horizontal-compact",
-                "bind::esri:fieldLength": 1000,
-                "hint": "<p>What seems to be 1-3 species that are prevalent at the site (&gt;30% of all shrub sp.)</p>",
-                "label": "Dominant shrub species",
-                "name": "dominant_shrub_species",
-                "type": "select_multiple list_rapid_plant_community_assessmen_dominant_shrub_species"
-            },
-            {
-                "label": "Other",
-                "name": "dominant_shrub_species_other",
-                "relevant": "selected(${dominant_shrub_species}, 'other')",
-                "type": "text",
-                "appearance": "w4"
+                "appearance": "w4:4",
+                "label": "Dominant shrub species (if present)",
+                "name": "dominant_shrub_cover",
+                "survey": [
+                    {
+                        "appearance": "w4 horizontal",
+                        "label": "Highbush blueberry",
+                        "name": "dominant_shrub_cover_highbush_bluerberry",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
+                    },
+                    {
+                        "appearance": "w4 horizontal",
+                        "label": "Sweet pepperbush",
+                        "name": "dominant_shrub_cover_sweet_pepperbush",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
+                    },
+                    {
+                        "appearance": "w4 horizontal",
+                        "label": "Other species",
+                        "name": "dominant_shrub_cover_other",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
+                    },
+                    {
+                        "label": "Other",
+                        "name": "dominant_shrub_species_if_presen_other",
+                        "type": "text",
+                        "hint": "If you selected other, please specify the species.",
+                        "appearance": "w4"
+                    }
+                ],
+                "type": "begin group"
             },
             {
                 "appearance": "w4 horizontal-compact",
@@ -497,44 +560,44 @@
             },
             {
                 "appearance": "w4:4",
-                "label": "Invasive Flora Assessment",
-                "name": "invasive_flora_assessment",
+                "label": "Invasive species (if present)",
+                "name": "invasive_cover",
                 "relevant": "${do_you_see_any_invasive_plant_s}='Yes'",
                 "survey": [
                     {
-                        "bind::esri:fieldLength": 255,
+                        "appearance": "w4 horizontal",
                         "label": "Multiflora rosa",
-                        "name": "field_46_0",
-                        "type": "select_one list_rapid_plant_community_assessmen_invasive_flora_assessment",
-                        "appearance": "w4"
+                        "name": "invasive_cover_multiflora_rosa",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
-                        "bind::esri:fieldLength": 255,
+                        "appearance": "w4 horizontal",
                         "label": "Glossy buckthorn",
-                        "name": "field_46_1",
-                        "type": "select_one list_rapid_plant_community_assessmen_invasive_flora_assessment",
-                        "appearance": "w4"
+                        "name": "invasive_cover_glossy_buckthorn",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
-                        "bind::esri:fieldLength": 255,
+                        "appearance": "w4 horizontal",
                         "label": "Garlic mustard",
-                        "name": "field_46_2",
-                        "type": "select_one list_rapid_plant_community_assessmen_invasive_flora_assessment",
-                        "appearance": "w4"
+                        "name": "invasive_cover_garlic_mustard",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
-                        "bind::esri:fieldLength": 255,
+                        "appearance": "w4 horizontal",
                         "label": "Japanese knotweed",
-                        "name": "field_46_4",
-                        "type": "select_one list_rapid_plant_community_assessmen_invasive_flora_assessment",
-                        "appearance": "w4"
+                        "name": "invasive_cover_japanese_knotweed",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     },
                     {
-                        "bind::esri:fieldLength": 255,
+                        "appearance": "w4 horizontal",
                         "label": "Barberry species (Japanese or European)",
-                        "name": "field_46_3",
-                        "type": "select_one list_rapid_plant_community_assessmen_invasive_flora_assessment",
-                        "appearance": "w4"
+                        "name": "invasive_cover_barberry",
+                        "type": "select_one list_rapid_plant_community_assessmen__of_water_surface_shaded_by_shr",
+                        "default": "0%"
                     }
                 ],
                 "type": "begin group"
@@ -599,43 +662,138 @@
                 "relevant": "${are_you_seeing_or_hearing_any_o}='Yes'",
                 "survey": [
                     {
-                        "bind::esri:fieldLength": 255,
+                        "type": "begin group",
+                        "appearance": "w4:4",
                         "label": "Wood frog",
                         "name": "obligate_species_herp_wood_frog",
-                        "type": "select_one list_present_species_obligate_and_ot_obligate_species_herp",
-                        "appearance": "w4"
+                        "survey": [
+                            {
+                                "type": "select_one yes_no",
+                                "label": "Eggmasses",
+                                "default": "no",
+                                "name": "obligate_species_herp_wood_frog_eggmasses",
+                                "appearance": "w2"
+                            },
+                            {
+                                "type": "integer",
+                                "label": "Juveniles",
+                                "default": 0,
+                                "name": "obligate_species_herp_wood_frog_juveniles",
+                                "appearance": "w1"
+                            },
+                            {
+                                "type": "integer",
+                                "label": "Adults",
+                                "default": 0,
+                                "name": "obligate_species_herp_wood_frog_adults",
+                                "appearance": "w1"
+                            }
+                        ]
                     },
                     {
-                        "bind::esri:fieldLength": 255,
+                        "type": "begin group",
+                        "appearance": "w4:4",
                         "label": "Spotted salamander",
-                        "name": "field_16_1",
-                        "type": "select_one list_present_species_obligate_and_ot_obligate_species_herp",
-                        "appearance": "w4"
+                        "name": "obligate_species_herp_spotted_salamander",
+                        "survey": [
+                            {
+                                "type": "select_one yes_no",
+                                "label": "Eggmasses",
+                                "default": "no",
+                                "name": "obligate_species_herp_spotted_salamander_eggmasses",
+                                "appearance": "w2"
+                            },
+                            {
+                                "type": "integer",
+                                "label": "Juveniles",
+                                "default": 0,
+                                "name": "obligate_species_herp_spotted_salamander_juveniles",
+                                "appearance": "w1"
+                            },
+                            {
+                                "type": "integer",
+                                "label": "Adults",
+                                "default": 0,
+                                "name": "obligate_species_herp_spotted_salamander_adults",
+                                "appearance": "w1"
+                            }
+                        ]
                     },
                     {
-                        "bind::esri:fieldLength": 255,
+                        "type": "begin group",
+                        "appearance": "w4:4",
                         "label": "Marbled salamander",
-                        "name": "field_16_2",
-                        "type": "select_one list_present_species_obligate_and_ot_obligate_species_herp",
-                        "appearance": "w4"
+                        "name": "obligate_species_herp_marbled_salamander",
+                        "survey": [
+                            {
+                                "type": "select_one yes_no",
+                                "label": "Eggmasses",
+                                "default": "no",
+                                "name": "obligate_species_herp_marbled_salamander_eggmasses",
+                                "appearance": "w2"
+                            },
+                            {
+                                "type": "integer",
+                                "label": "Juveniles",
+                                "default": 0,
+                                "name": "obligate_species_herp_marbled_salamander_juveniles",
+                                "appearance": "w1"
+                            },
+                            {
+                                "type": "integer",
+                                "label": "Adults",
+                                "default": 0,
+                                "name": "obligate_species_herp_marbled_salamander_adults",
+                                "appearance": "w1"
+                            }
+                        ]
                     },
                     {
-                        "bind::esri:fieldLength": 255,
-                        "label": "Other ",
-                        "name": "obligate_species_herp_other_",
-                        "type": "select_one list_present_species_obligate_and_ot_obligate_species_herp",
-                        "appearance": "w4"
+                        "type": "begin group",
+                        "appearance": "w4:4",
+                        "label": "Other",
+                        "name": "obligate_species_herp_other",
+                        "survey": [
+                            {
+                                "type": "select_one yes_no",
+                                "label": "Eggmasses",
+                                "default": "no",
+                                "name": "obligate_species_herp_other_eggmasses",
+                                "appearance": "w2"
+                            },
+                            {
+                                "type": "integer",
+                                "label": "Juveniles",
+                                "default": 0,
+                                "name": "obligate_species_herp_other_juveniles",
+                                "appearance": "w1"
+                            },
+                            {
+                                "type": "integer",
+                                "label": "Adults",
+                                "default": 0,
+                                "name": "obligate_species_herp_other_adults",
+                                "appearance": "w1"
+                            }
+                        ]
                     }
                 ],
                 "type": "begin group"
             },
             {
-                "appearance": "w4 horizontal-compact",
-                "bind::esri:fieldLength": 255,
+                "appearance": "w4",
                 "label": "Obligate species - Fairy shrimp",
                 "name": "obligate_species_fairy_shrimp",
                 "relevant": "${are_you_seeing_or_hearing_any_o}='Yes'",
-                "type": "select_one list_present_species_obligate_and_ot_obligate_species_fairy_shrimp"
+                "type": "select_one yes_no",
+                "default": "no"
+            },
+            {
+                "appearance": "w4",
+                "label": "Fairy shrimp count",
+                "name": "obligate_species_fairy_shrimp_count",
+                "relevant": "${obligate_species_fairy_shrimp}='yes'",
+                "type": "integer"
             },
             {
                 "appearance": "w4 multiline",
