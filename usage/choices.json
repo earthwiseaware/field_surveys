@@ -1,0 +1,34 @@
+{
+    "list_do_you_want_to_provide_feedback": {
+        "No": "No",
+        "Yes": "Yes"
+    },
+    "list_group_2__how_many_dogs_on_leash": {
+        "0": "0",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "other": "More"
+    },
+    "list_group_2__is_a_ranger_part_of_the_group": {
+        "No": "No",
+        "Yes": "Yes"
+    },
+    "list_group_2_how_many_dogs_total": {
+        "0": "0",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+        "other": "More"
+    },
+    "list_group_2_is_this_group_with_dogs": {
+        "With": "With",
+        "Without": "Without"
+    }
+}

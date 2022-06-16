@@ -1,0 +1,155 @@
+[
+    {
+        "hint": "<p><span style=\"background-color:transparent;\"><img alt src=\"ewa_pa_insta_format_1_1647459546304.png\" width=\"330\" style></span></p><p><span style=\"font-size:16px; background-color:transparent;\">\ufeffHelp test the effectiveness of messaging approaches related to a responsible use of the Fells. Record simple usage criteria: visitors on foot, bike, with or without dogs (on leash and off leash). Thanks!</span></p>",
+        "name": "generated_note_surveyDescription",
+        "type": "note"
+    },
+    {
+        "label": "Submit",
+        "name": "generated_note_form_submit_text",
+        "type": "note"
+    },
+    {
+        "label": "<a target='_blank' style='color:#000000;' href='https://www.esri.com/products/survey123'>Powered by ArcGIS Survey123</a>",
+        "name": "generated_note_form_footer",
+        "type": "note"
+    },
+    {
+        "label": "<p style=\"text-align:center;\"><br></p><p style=\"text-align:center;\"><img alt=\"Green check icon\" src=\"data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48Y2lyY2xlIGZpbGw9IiMzMTg3MkUiIGN4PSIzMiIgY3k9IjMyIiByPSIzMiIvPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0yMi42NjEgMzAuMjQ2bDUuMTgyIDQuOTg3TDQxLjU1MiAyMiA0NSAyNS40NjEgMjcuNzQ3IDQyIDE5IDMzLjQ5OHoiLz48L2c+PC9zdmc+\"></p><p style=\"text-align:center;\"><br></p><p style=\"text-align:center;\"><strong style=\"font-size:16px;\">Great! Your data was sent successfully. Thanks.</strong></p>",
+        "name": "generated_note_prompt_submitted",
+        "type": "note"
+    },
+    {
+        "bind::esri:fieldLength": 255,
+        "constraint": "regex(.,'^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$')",
+        "hint": "<p>Please enter your email so that we can contact you if we have a question regarding a record.</p>",
+        "label": "\ud83d\udc64  Team Member Identifier",
+        "name": "_team_member_identifier",
+        "required": "yes",
+        "required_message": "This is a required question",
+        "type": "text"
+    },
+    {
+        "appearance": "minimal compact",
+        "hint": "<p>Check and correct if necessary.</p>",
+        "label": "Date, Time, and Location of Survey",
+        "name": "fells_usage_documentation",
+        "survey": [
+            {
+                "bind::esri:fieldLength": 255,
+                "default": "now()",
+                "hint": "<p>The date and time of your observation will be entered automatically.</p>",
+                "label": "\ud83d\udcc5  Date and Time",
+                "name": "_date_and_time",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "dateTime"
+            },
+            {
+                "appearance": "hide-input",
+                "body::esri:style": "map=588f0e0acc514c11bc7c898fed9fc651",
+                "hint": "<p>Correct your location if necessary. For a higher degree of location accuracy, set your device to use both its internal GPS and cell phone tower data.</p>",
+                "label": "\ud83d\uddfa\ufe0f  Sighting Location ",
+                "name": "_sighting_location_",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "geopoint"
+            }
+        ],
+        "type": "begin group"
+    },
+    {
+        "label": "Fells Usage Documentation",
+        "name": "group_2",
+        "survey": [
+            {
+                "bind::esri:fieldType": "esriFieldTypeDouble",
+                "hint": "<p>Have one survey per group of visitors. A group can be a mix of people on foot, on bike, with or without dog.</p>",
+                "label": "\ud83d\udeb6\ud83c\udffc  How many visitors on foot?",
+                "name": "how_many_people_on_foot",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "integer"
+            },
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 255,
+                "default": "No",
+                "label": "\ud83d\udc6e Is a ranger part of the group?",
+                "name": "_is_a_ranger_part_of_the_group",
+                "type": "select_one list_group_2__is_a_ranger_part_of_the_group"
+            },
+            {
+                "bind::esri:fieldType": "esriFieldTypeDouble",
+                "label": "\ud83d\udeb4\u200d\u2642\ufe0f  How many visitors on bike?",
+                "name": "how_many_on_bike",
+                "type": "integer"
+            },
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 255,
+                "default": "Without",
+                "label": "\ud83d\udc36  Is this group with dog(s)?",
+                "name": "is_this_group_with_dogs",
+                "required": "yes",
+                "required_message": "This is a required question",
+                "type": "select_one list_group_2_is_this_group_with_dogs"
+            },
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 255,
+                "hint": "<p>If more than 6, input the number.</p>",
+                "label": "\u25ac How many dogs ON leash?",
+                "name": "_how_many_dogs_on_leash",
+                "relevant": "${is_this_group_with_dogs}='With'",
+                "type": "select_one list_group_2__how_many_dogs_on_leash"
+            },
+            {
+                "label": "More",
+                "name": "_how_many_dogs_total_copy_other",
+                "relevant": "selected(${_how_many_dogs_on_leash}, 'other')",
+                "type": "text"
+            },
+            {
+                "appearance": "horizontal-compact",
+                "bind::esri:fieldLength": 255,
+                "hint": "<p>If more than 6, input the number.</p>",
+                "label": "\u25ac How many dogs OFF leash?",
+                "name": "how_many_dogs_total",
+                "relevant": "${is_this_group_with_dogs}='With'",
+                "type": "select_one list_group_2_how_many_dogs_total"
+            },
+            {
+                "label": "More",
+                "name": "how_many_dogs_total_other",
+                "relevant": "selected(${how_many_dogs_total}, 'other')",
+                "type": "text"
+            }
+        ],
+        "type": "begin group"
+    },
+    {
+        "appearance": "horizontal-compact",
+        "bind::esri:fieldLength": 255,
+        "default": "No",
+        "label": "Do you want to provide feedback or comments?",
+        "name": "do_you_want_to_provide_feedback",
+        "type": "select_one list_do_you_want_to_provide_feedback"
+    },
+    {
+        "appearance": "multiline",
+        "bind::esri:fieldLength": 1000,
+        "constraint": "string-length(.)<=300",
+        "constraint_message": "Please input 300 characters at most",
+        "label": "Notes:",
+        "name": "notes",
+        "relevant": "${do_you_want_to_provide_feedback}='Yes'",
+        "type": "text"
+    },
+    {
+        "hint": "<p style=\"text-align:center;\"><span style=\"font-size:18px;\">Click the checkmark \u2013 You're Done!</span></p><p style=\"text-align:center;\"><span style=\"font-size:18px;\"> Thanks for surveying with us today </span></p><p style=\"text-align:center;\">&nbsp;\u25a1&nbsp;\u25a1&nbsp;\u25a1</p><p style=\"text-align:center;\"><a href=\"https://www.earthwiseaware.org/\" target=\"_blank\" style=\"color:rgb(178, 107, 0); font-size:18px;\">www.earthwiseaware.org</a></p><p style=\"text-align:center;\"><span style=\"color:rgb(0, 151, 167); font-size:14px;\">citizenscience@earthwiseaware.org</span></p><p style=\"text-align:center;\"><span style=\"color:rgb(153, 153, 153);\">Copyright \u00a9 2021 Earthwise Aware . </span></p><p style=\"text-align:center;\"><span style=\"color:rgb(153, 153, 153);\">All Rights Reserved.</span></p>",
+        "name": "field_3",
+        "readonly": "yes",
+        "type": "note"
+    }
+]
