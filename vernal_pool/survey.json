@@ -668,9 +668,9 @@
                         "name": "obligate_species_herp_wood_frog",
                         "survey": [
                             {
-                                "type": "select_one yes_no",
+                                "type": "integer",
                                 "label": "Eggmasses",
-                                "default": "no",
+                                "default": 0,
                                 "name": "obligate_species_herp_wood_frog_eggmasses",
                                 "appearance": "w2"
                             },
@@ -697,9 +697,9 @@
                         "name": "obligate_species_herp_spotted_salamander",
                         "survey": [
                             {
-                                "type": "select_one yes_no",
+                                "type": "integer",
                                 "label": "Eggmasses",
-                                "default": "no",
+                                "default": 0,
                                 "name": "obligate_species_herp_spotted_salamander_eggmasses",
                                 "appearance": "w2"
                             },
@@ -726,9 +726,9 @@
                         "name": "obligate_species_herp_marbled_salamander",
                         "survey": [
                             {
-                                "type": "select_one yes_no",
+                                "type": "integer",
                                 "label": "Eggmasses",
-                                "default": "no",
+                                "default": 0,
                                 "name": "obligate_species_herp_marbled_salamander_eggmasses",
                                 "appearance": "w2"
                             },
@@ -755,9 +755,9 @@
                         "name": "obligate_species_herp_other",
                         "survey": [
                             {
-                                "type": "select_one yes_no",
+                                "type": "integer",
                                 "label": "Eggmasses",
-                                "default": "no",
+                                "default": 0,
                                 "name": "obligate_species_herp_other_eggmasses",
                                 "appearance": "w2"
                             },
