@@ -4,23 +4,62 @@
         "no": "No"
     },
     "arthropod_order": {
-        "coleoptera": "<img src=\"coleoptera_small.png\"/><p>Coleoptera</p>",
-        "lepidotera": "<img src=\"lepidoptera_small.png\" width=\"10px\" /><p>Lepidoptera</p>",
-        "hymenoptera": "<img src=\"hymenoptera_small.png\" width=\"10px\" /><p>Hymenoptera</p>"
+        "diptera": "Flies",
+        "coleoptera": "Beetles",
+        "hymenoptera_1": "Bees, Wasps, and Sawflies",
+        "hymenoptera_2": "Ants",
+        "lepidoptera": "Moths and Butterflies",
+        "anisoptera": "Damselflies and Dragonflies",
+        "cicadomorpha": "Cicadas, Leafhoppers, and Treehoppers",
+        "aphidomorpha": "Aphids and Allies",
+        "trichoptera": "Caddisflies",
+        "blattodea": "Cockroaches",
+        "araneae": "Spiders",
+        "opiliones": "Harvestman", 
+        "unidentified": "Unidentified",
+        "other": "Other"
     },
-    "association_types": {
-        "feeding": "Feeding",
-        "larval_host": "Larval Host",
-        "cover": "Cover"
+    "host_group": {
+        "angiospermae": "Flowering plants",
+        "pinopsida": "Conifers",
+        "poales": "Grasses, Sedges, Cattails, and Allies",
+        "polypodiopsida": "Ferns",
+        "bryophyta": "Mosses",
+        "fungi": "Fungi", 
+        "unidentified": "Unidentified",
+        "other": "Other"
     },
-    "host_groups": {
-        "woody": "Woody plants",
-        "aquatic": "Aquatic plants",
-        "grass": "Grasslike plants",
-        "orchid": "Orchids",
-        "fern": "Ferns",
-        "fungus": "Fungi",
-        "other": "Other",
-        "unknown": "Unknown"
+    "survey_method": {
+        "incidental": "Incidental",
+        "walking": "Walking",
+        "area": "Area search",
+        "other": "Other"
+    },
+    "developmental_stage": {
+        "egg": "Egg or eggsac",
+        "larva": "Larva or caterpillar",
+        "pupa": "Pupa",
+        "nymph": "Nymph",
+        "adult": "Adult",
+        "other": "Other"
+    },
+    "activity": {
+        "mating": "Mating",
+        "resting": "Resting",
+        "feeding": "feeding",
+        "prey": "Being preyed upon",
+        "predator": "Preying upon",
+        "guarding": "Guarding",
+        "tending": "Tending",
+        "cleaning": "Cleaning",
+        "other": "Other"
+    },
+    "host_phenology": {
+        "initial": "Initial growth",
+        "breaking": "Breaking leaf bud",
+        "increasing": "Increasing leaf size",
+        "flowers": "Flowers",
+        "mature": "Mature leaf",
+        "other": "Other"
     }
 }
