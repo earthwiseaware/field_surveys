@@ -1,0 +1,187 @@
+[
+    {
+        "type": "begin group",
+        "appearance": "field-list",
+        "label": "Session information",
+        "name": "session_info",
+        "survey": [
+            {
+                "type": "note",
+                "label": "Welcome!",
+                "name": "intro_note",
+                "hint": "Help us document arthropod interaction networks, so that we can understand better the associations between arthropod and their host, and their activities. Thanks!",
+                "appearance": "w4"
+            },
+            {
+                "type": "email",
+                "name": "email",
+                "label": "email"
+            },
+            {
+                "type": "username",
+                "name": "username",
+                "label": "username"
+            },
+            {
+                "type": "start",
+                "name": "start",
+                "label": "start"
+            },
+            {
+                "type": "geopoint",
+                "label": "🗺️ Sighting location",
+                "hint": "Correct your location if necessary. For a higher degree of location accuracy, set your device to use both its internal GPS and cell phone tower data.",
+                "name": "location",
+                "required": "yes",
+                "appearance": "w4"
+            },
+            {
+                "type": "select_one survey_method",
+                "label": "Survey method",
+                "name": "survey_method",
+                "required": "yes",
+                "appearance": "w4 minimal"
+            }
+        ]
+    },
+    {
+        "type": "begin group",
+        "appearance": "field-list",
+        "label": "Arthropod documentation",
+        "name": "arthropod_documentation",
+        "survey": [
+            {
+                "label": "Arthropod group",
+                "required": "yes",
+                "appearance": "w4 minimal",
+                "hint": "🪲 Here's a guide to the main arthropod groups if needed > <a href=\"https://drive.google.com/file/d/1XpDGweu6TsLOOimjtMSWDAnmOOKqWZxG/view\">here</a>",
+                "type": "select_one arthropod_order",
+                "name": "arthropod_group"
+            },
+            {
+                "type": "begin repeat",
+                "label": "Bug photoshoot",
+                "name": "arthropod_photos",
+                "appearance": "w4:4",
+                "required": "yes",
+                "survey": [
+                    {
+                        "type": "image",
+                        "label": "Take a photo",
+                        "hint": "Face, top, side if possible",
+                        "name": "arthropod_photo"
+                    }
+                ]
+            },
+            {
+                "type": "integer",
+                "label": "Quantity",
+                "name": "quantity",
+                "appearance": "w2"
+            },
+            {
+                "type": "integer",
+                "label": "Length (mm)",
+                "name": "length",
+                "appearance": "w2"
+            },
+            {
+                "type": "select_one developmental_stage",
+                "label": "Developmental stage",
+                "name": "developmental_stage",
+                "appearance": "w4 minimal",
+                "hint": "If known"
+            },
+            {
+                "type": "select_one activity",
+                "label": "Activity",
+                "name": "activity",
+                "appearance": "w4 minimal",
+                "hint": "If known"
+            },
+            {
+                "type": "text",
+                "appearance": "w4 multiline",
+                "label": "More info?",
+                "name": "arthropod_more",
+                "hint": "If you know the family, genus, or species of the arthropod, please record it here. Any other information?"
+            }
+        ]
+    },
+    {
+        "type": "begin group",
+        "appearance": "field-list",
+        "label": "Host documentation",
+        "name": "host_documentation",
+        "survey": [
+            {
+                "type": "select_one yes_no",
+                "required": "yes",
+                "name": "has_host",
+                "label": "Is the arthropod on a support (plant,fungus,etc.)?",
+                "appearance": "w4"
+            },
+            {
+                "type": "select_one host_group",
+                "label": "Host taxonomic group",
+                "name": "host_group",
+                "appearance": "w4 minimal",
+                "relevant": "${has_host}='yes'"
+            },
+            {
+                "type": "begin repeat",
+                "label": "Host photoshoot",
+                "name": "host_photos",
+                "appearance": "w4:4",
+                "survey": [
+                    {
+                        "type": "image",
+                        "label": "Take a photo",
+                        "hint": "This is required for identification",
+                        "name": "host_photo"
+                    }
+                ],
+                "relevant": "${has_host}='yes'"
+            },
+            {
+                "label": "Is the support wet?",
+                "type": "select_one yes_no",
+                "appearance": "w4",
+                "hint": "Wet leaves, fungi, or other...",
+                "name": "wet_support",
+                "relevant": "${has_host}='yes'"
+            },
+            {
+                "label": "Host phenology",
+                "hint": "If known",
+                "name": "host_phenology",
+                "type": "select_one host_phenology",
+                "appearance": "w4 minimal",
+                "relevant": "${has_host}='yes'"
+            },
+            {
+                "type": "text",
+                "appearance": "w4 multiline",
+                "label": "More info?",
+                "name": "host_more",
+                "hint": "If you know the family, genus, or species of the host, please record it here. Any other information?",
+                "relevant": "${has_host}='yes'"
+            }
+        ]
+    },
+    {
+        "type": "begin group",
+        "appearance": "field-list",
+        "label": "Before you leave...",
+        "name": "notes_page",
+        "survey": [
+            {
+                "type": "text",
+                "appearance": "w4 multiline",
+                "label": "Notes",
+                "name": "notes",
+                "hint": "Have feedback or comments? Share them here."
+            }
+        ]
+    }
+]
