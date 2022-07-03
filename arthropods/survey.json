@@ -23,16 +23,10 @@
                 "label": "username"
             },
             {
-                "type": "start",
-                "name": "start",
-                "label": "start"
-            },
-            {
-                "type": "geopoint",
-                "label": "🗺️ Sighting location",
-                "hint": "Correct your location if necessary. For a higher degree of location accuracy, set your device to use both its internal GPS and cell phone tower data.",
-                "name": "location",
-                "required": "yes",
+                "type": "dateTime",
+                "name": "survey_ts",
+                "calculation": "now()",
+                "label": "Time of Survey",
                 "appearance": "w4"
             },
             {
@@ -47,6 +41,14 @@
                 "label": "Please specify",
                 "name": "survey_method_other",
                 "relevant": "${survey_method}='other'",
+                "appearance": "w4"
+            },
+            {
+                "type": "geopoint",
+                "label": "🗺️ Sighting location",
+                "hint": "Correct your location if necessary. For a higher degree of location accuracy, set your device to use both its internal GPS and cell phone tower data.",
+                "name": "location",
+                "required": "yes",
                 "appearance": "w4"
             }
         ]
