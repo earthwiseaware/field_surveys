@@ -41,6 +41,13 @@
                 "name": "survey_method",
                 "required": "yes",
                 "appearance": "w4 minimal"
+            },
+            {
+                "type": "text",
+                "label": "Please specify",
+                "name": "survey_method_other",
+                "relevant": "${survey_method}='other'",
+                "appearance": "w4"
             }
         ]
     },
@@ -57,6 +64,13 @@
                 "hint": "🪲 Here's a guide to the main arthropod groups if needed > <a href=\"https://drive.google.com/file/d/1XpDGweu6TsLOOimjtMSWDAnmOOKqWZxG/view\">here</a>",
                 "type": "select_one arthropod_order",
                 "name": "arthropod_group"
+            },
+            {
+                "type": "text",
+                "label": "Please specify",
+                "name": "arthropod_group_other",
+                "relevant": "${arthropod_group}='other'",
+                "appearance": "w4"
             },
             {
                 "type": "begin repeat",
@@ -93,11 +107,25 @@
                 "hint": "If known"
             },
             {
+                "type": "text",
+                "label": "Please specify",
+                "name": "developmental_stage_other",
+                "relevant": "${developmental_stage}='other'",
+                "appearance": "w4"
+            },
+            {
                 "type": "select_one activity",
                 "label": "Activity",
                 "name": "activity",
                 "appearance": "w4 minimal",
                 "hint": "If known"
+            },
+            {
+                "type": "text",
+                "label": "Please specify",
+                "name": "activity_other",
+                "relevant": "${activity}='other'",
+                "appearance": "w4"
             },
             {
                 "type": "text",
@@ -129,6 +157,13 @@
                 "relevant": "${has_host}='yes'"
             },
             {
+                "type": "text",
+                "label": "Please specify",
+                "name": "host_group_other",
+                "relevant": "${host_group}='other'",
+                "appearance": "w4"
+            },
+            {
                 "type": "begin repeat",
                 "label": "Host photoshoot",
                 "name": "host_photos",
@@ -158,6 +193,13 @@
                 "type": "select_one host_phenology",
                 "appearance": "w4 minimal",
                 "relevant": "${has_host}='yes'"
+            },
+            {
+                "type": "text",
+                "label": "Please specify",
+                "name": "host_phenology_other",
+                "relevant": "${host_phenology}='other'",
+                "appearance": "w4"
             },
             {
                 "type": "text",
