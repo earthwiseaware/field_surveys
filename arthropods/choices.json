@@ -9,6 +9,7 @@
         "hymenoptera_1": "Bees, Wasps, and Sawflies",
         "hymenoptera_2": "Ants",
         "lepidoptera": "Moths and Butterflies",
+        "hemiptera": "True Bugs",
         "anisoptera": "Damselflies and Dragonflies",
         "cicadomorpha": "Cicadas, Leafhoppers, and Treehoppers",
         "aphidomorpha": "Aphids and Allies",
@@ -46,7 +47,7 @@
     "activity": {
         "mating": "Mating",
         "resting": "Resting",
-        "feeding": "feeding",
+        "feeding": "Feeding",
         "prey": "Being preyed upon",
         "predator": "Preying upon",
         "guarding": "Guarding",
@@ -59,6 +60,7 @@
         "breaking": "Breaking leaf bud",
         "increasing": "Increasing leaf size",
         "flowers": "Flowers",
+        "fruiting": "Fruiting",
         "mature": "Mature leaf",
         "other": "Other"
     }
