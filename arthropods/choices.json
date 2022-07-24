@@ -37,11 +37,11 @@
         "other": "Other"
     },
     "developmental_stage": {
+        "adult": "Adult",
         "egg": "Egg or eggsac",
         "larva": "Larva or caterpillar",
         "pupa": "Pupa",
         "nymph": "Nymph",
-        "adult": "Adult",
         "other": "Other"
     },
     "activity": {

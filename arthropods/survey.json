@@ -13,9 +13,21 @@
                 "appearance": "w4"
             },
             {
-                "type": "email",
-                "name": "email",
-                "label": "email"
+                "type": "text",
+                "name": "input_email",
+                "label": "Email",
+                "appearance": "w4",
+                "hint": "Feel free to provide an email so we can reach out to you"
+            },
+            {
+                 "type": "email",
+                 "name": "email",
+                 "label": "email"
+            },
+            {
+                "type": "deviceid",
+                "name": "deviceid",
+                "label": "deviceid"
             },
             {
                 "type": "username",
