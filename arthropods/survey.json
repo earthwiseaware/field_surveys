@@ -1,243 +1,280 @@
 [
     {
-        "type": "begin group",
+        "name": "username",
+        "type": "username"
+    },
+    {
+        "name": "deviceid",
+        "type": "deviceid"
+    },
+    {
         "appearance": "field-list",
         "label": "Session information",
         "name": "session_info",
-        "survey": [
-            {
-                "type": "note",
-                "label": "Welcome!",
-                "name": "intro_note",
-                "hint": "Help us document arthropod interaction networks, so that we can understand better the associations between arthropod and their host, and their activities. Thanks!",
-                "appearance": "w4"
-            },
-            {
-                "type": "text",
-                "name": "input_email",
-                "label": "Email",
-                "appearance": "w4",
-                "hint": "Feel free to provide an email so we can reach out to you"
-            },
-            {
-                 "type": "email",
-                 "name": "email",
-                 "label": "email"
-            },
-            {
-                "type": "deviceid",
-                "name": "deviceid",
-                "label": "deviceid"
-            },
-            {
-                "type": "username",
-                "name": "username",
-                "label": "username"
-            },
-            {
-                "type": "dateTime",
-                "name": "survey_ts",
-                "calculation": "now()",
-                "label": "Time of Survey",
-                "appearance": "w4"
-            },
-            {
-                "type": "select_one survey_method",
-                "label": "Survey method",
-                "name": "survey_method",
-                "required": "yes",
-                "appearance": "w4 minimal"
-            },
-            {
-                "type": "text",
-                "label": "Please specify",
-                "name": "survey_method_other",
-                "relevant": "${survey_method}='other'",
-                "appearance": "w4"
-            },
-            {
-                "type": "geopoint",
-                "label": "🗺️ Sighting location",
-                "hint": "Correct your location if necessary. For a higher degree of location accuracy, set your device to use both its internal GPS and cell phone tower data.",
-                "name": "location",
-                "required": "yes",
-                "appearance": "w4"
-            }
-        ]
+        "required": "false",
+        "type": "begin_group"
     },
     {
-        "type": "begin group",
+        "media::image::English (en)": "EwA-Buggy-x.png",
+        "name": "ewa_logo",
+        "required": "false",
+        "type": "note"
+    },
+    {
+        "appearance": "w4",
+        "hint": "Help EwA document arthropod interaction networks, so that we can understand better the associations between arthropod and their host, and their activities. Thanks!",
+        "label": "Welcome!",
+        "name": "intro_note",
+        "required": "false",
+        "type": "note"
+    },
+    {
+        "appearance": "w4",
+        "constraint": "regex(., \u2018^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+[.][A-Za-z]{2,}$\u2019)",
+        "constraint_message": "Please enter a valid email address",
+        "hint": "Please enter your email so that we can contact you if we have a question regarding a record.",
+        "label": "\ud83d\udc64 Team member email",
+        "name": "input_email",
+        "required": "true",
+        "type": "text"
+    },
+    {
+        "appearance": "w4",
+        "calculation": "now()",
+        "label": "Date and time of survey",
+        "name": "survey_ts",
+        "required": "true",
+        "type": "datetime"
+    },
+    {
+        "appearance": "w4 minimal",
+        "label": "Survey method",
+        "name": "survey_method",
+        "required": "true",
+        "type": "select_one survey_method"
+    },
+    {
+        "appearance": "w4",
+        "label": "Please specify",
+        "name": "survey_method_other",
+        "relevant": "${survey_method} = 'other'",
+        "required": "false",
+        "type": "text"
+    },
+    {
+        "appearance": "w4",
+        "hint": "Click on the target icon to record your location. For a higher degree of location accuracy, set your device to use both its internal GPS and cell phone tower data.",
+        "label": "\ud83d\uddfa\ufe0f Sighting location",
+        "name": "location",
+        "required": "true",
+        "type": "geopoint"
+    },
+    {
+        "type": "end_group"
+    },
+    {
         "appearance": "field-list",
         "label": "Arthropod documentation",
         "name": "arthropod_documentation",
-        "survey": [
-            {
-                "label": "Arthropod group",
-                "required": "yes",
-                "appearance": "w4 minimal",
-                "hint": "🪲 Here's a guide to the main arthropod groups if needed > <a href=\"https://drive.google.com/file/d/1XpDGweu6TsLOOimjtMSWDAnmOOKqWZxG/view\">here</a>",
-                "type": "select_one arthropod_order",
-                "name": "arthropod_group"
-            },
-            {
-                "type": "text",
-                "label": "Please specify",
-                "name": "arthropod_group_other",
-                "relevant": "${arthropod_group}='other'",
-                "appearance": "w4"
-            },
-            {
-                "type": "begin repeat",
-                "label": "Bug photoshoot",
-                "name": "arthropod_photos",
-                "appearance": "w4:4",
-                "required": "yes",
-                "survey": [
-                    {
-                        "type": "image",
-                        "label": "Take a photo",
-                        "hint": "Face, top, side if possible",
-                        "name": "arthropod_photo"
-                    }
-                ]
-            },
-            {
-                "type": "integer",
-                "label": "Quantity",
-                "name": "quantity",
-                "appearance": "w2"
-            },
-            {
-                "type": "integer",
-                "label": "Length (mm)",
-                "name": "length",
-                "appearance": "w2"
-            },
-            {
-                "type": "select_one developmental_stage",
-                "label": "Developmental stage",
-                "name": "developmental_stage",
-                "appearance": "w4 minimal",
-                "hint": "If known"
-            },
-            {
-                "type": "text",
-                "label": "Please specify",
-                "name": "developmental_stage_other",
-                "relevant": "${developmental_stage}='other'",
-                "appearance": "w4"
-            },
-            {
-                "type": "select_one activity",
-                "label": "Activity",
-                "name": "activity",
-                "appearance": "w4 minimal",
-                "hint": "If known"
-            },
-            {
-                "type": "text",
-                "label": "Please specify",
-                "name": "activity_other",
-                "relevant": "${activity}='other'",
-                "appearance": "w4"
-            },
-            {
-                "type": "text",
-                "appearance": "w4 multiline",
-                "label": "More info?",
-                "name": "arthropod_more",
-                "hint": "If you know the family, genus, or species of the arthropod, please record it here. Any other information?"
-            }
-        ]
+        "required": "false",
+        "type": "begin_group"
     },
     {
-        "type": "begin group",
+        "appearance": "w4 minimal",
+        "label": "\ud83e\udeb2 Arthropod group",
+        "name": "arthropod_group",
+        "required": "true",
+        "type": "select_one arthropod_order"
+    },
+    {
+        "appearance": "w4",
+        "label": "Please specify",
+        "name": "arthropod_group_other",
+        "relevant": "${arthropod_group} = 'other'",
+        "required": "false",
+        "type": "text"
+    },
+    {
+        "appearance": "w4:4",
+        "label": "\ud83d\udcf8 Bug photoshoot",
+        "name": "arthropod_photos",
+        "required": "true",
+        "type": "begin_repeat"
+    },
+    {
+        "hint": "Take a photo of face, top, side if possible",
+        "label": "Take a photo",
+        "name": "arthropod_photo",
+        "parameters": "max-pixels=1024",
+        "required": "true",
+        "type": "image"
+    },
+    {
+        "type": "end_repeat"
+    },
+    {
+        "appearance": "w2",
+        "label": "Quantity",
+        "name": "quantity",
+        "required": "true",
+        "type": "integer"
+    },
+    {
+        "appearance": "w2",
+        "hint": "Only record arthropods longer than 2 mm",
+        "label": "Length (mm)",
+        "name": "length",
+        "required": "true",
+        "type": "integer"
+    },
+    {
+        "appearance": "w4 minimal",
+        "hint": "If known",
+        "label": "Developmental stage",
+        "name": "developmental_stage",
+        "required": "false",
+        "type": "select_one developmental_stage"
+    },
+    {
+        "appearance": "w4",
+        "label": "Please specify",
+        "name": "developmental_stage_other",
+        "relevant": "${developmental_stage} = 'other'",
+        "required": "false",
+        "type": "text"
+    },
+    {
+        "appearance": "w4 minimal",
+        "hint": "If known",
+        "label": "Activity",
+        "name": "activity",
+        "required": "false",
+        "type": "select_one activity"
+    },
+    {
+        "appearance": "w4",
+        "label": "Please specify",
+        "name": "activity_other",
+        "relevant": "${activity} = 'other'",
+        "required": "false",
+        "type": "text"
+    },
+    {
+        "appearance": "w4 multiline",
+        "hint": "If you know the family, genus, or species of the arthropod, please record it here. Any other information?",
+        "label": "\ud83d\udcdd More info?",
+        "name": "arthropod_more",
+        "required": "false",
+        "type": "text"
+    },
+    {
+        "type": "end_group"
+    },
+    {
         "appearance": "field-list",
         "label": "Host documentation",
         "name": "host_documentation",
-        "survey": [
-            {
-                "type": "select_one yes_no",
-                "required": "yes",
-                "name": "has_host",
-                "label": "Is the arthropod on a support (plant,fungus,etc.)?",
-                "appearance": "w4"
-            },
-            {
-                "type": "select_one host_group",
-                "label": "Host taxonomic group",
-                "name": "host_group",
-                "appearance": "w4 minimal",
-                "relevant": "${has_host}='yes'"
-            },
-            {
-                "type": "text",
-                "label": "Please specify",
-                "name": "host_group_other",
-                "relevant": "${host_group}='other'",
-                "appearance": "w4"
-            },
-            {
-                "type": "begin repeat",
-                "label": "Host photoshoot",
-                "name": "host_photos",
-                "appearance": "w4:4",
-                "survey": [
-                    {
-                        "type": "image",
-                        "label": "Take a photo",
-                        "hint": "This is required for identification",
-                        "name": "host_photo"
-                    }
-                ],
-                "relevant": "${has_host}='yes'"
-            },
-            {
-                "label": "Is the support wet?",
-                "type": "select_one yes_no",
-                "appearance": "w4",
-                "hint": "Wet leaves, fungi, or other...",
-                "name": "wet_support",
-                "relevant": "${has_host}='yes'"
-            },
-            {
-                "label": "Host phenology",
-                "hint": "If known",
-                "name": "host_phenology",
-                "type": "select_one host_phenology",
-                "appearance": "w4 minimal",
-                "relevant": "${has_host}='yes'"
-            },
-            {
-                "type": "text",
-                "label": "Please specify",
-                "name": "host_phenology_other",
-                "relevant": "${host_phenology}='other'",
-                "appearance": "w4"
-            },
-            {
-                "type": "text",
-                "appearance": "w4 multiline",
-                "label": "More info?",
-                "name": "host_more",
-                "hint": "If you know the family, genus, or species of the host, please record it here. Any other information?",
-                "relevant": "${has_host}='yes'"
-            }
-        ]
+        "required": "false",
+        "type": "begin_group"
     },
     {
-        "type": "begin group",
+        "appearance": "horizontal-compact",
+        "label": "Is the arthropod on a support (plant, fungus, moss, etc.)?",
+        "name": "has_host",
+        "required": "true",
+        "type": "select_one yes_no"
+    },
+    {
+        "appearance": "w4 minimal",
+        "label": "Host taxonomic group",
+        "name": "host_group",
+        "relevant": "${has_host} = 'yes'",
+        "required": "false",
+        "type": "select_one host_group"
+    },
+    {
+        "appearance": "w4",
+        "label": "Please specify",
+        "name": "host_group_other",
+        "relevant": "${host_group} = 'other'",
+        "required": "false",
+        "type": "text"
+    },
+    {
+        "hint": "If the photo of the 'bug' does not show the host clearly, take one of the host so that it is identifiable",
+        "label": "\ud83d\udcf8 Host photoshoot",
+        "name": "host_photo",
+        "parameters": "max-pixels=1024",
+        "relevant": "${has_host} = 'yes'",
+        "required": "false",
+        "type": "image"
+    },
+    {
+        "appearance": "horizontal-compact",
+        "hint": "Wet leaves, fungi, or other...",
+        "label": "Is the support wet?",
+        "name": "wet_support",
+        "relevant": "${has_host} = 'yes'",
+        "required": "false",
+        "type": "select_one yes_no"
+    },
+    {
+        "appearance": "w4 minimal",
+        "hint": "If known",
+        "label": "Host phenology",
+        "name": "host_phenology",
+        "relevant": "${has_host} = 'yes'",
+        "required": "false",
+        "type": "select_one host_phenology"
+    },
+    {
+        "appearance": "w4",
+        "label": "Please specify",
+        "name": "host_phenology_other",
+        "relevant": "${host_phenology} = 'other'",
+        "required": "false",
+        "type": "text"
+    },
+    {
+        "appearance": "w4 multiline",
+        "hint": "If you know the family, genus, or species of the host, please record it here. Any other information?",
+        "label": "\ud83d\udcdd More info?",
+        "name": "host_more",
+        "relevant": "${has_host} = 'yes'",
+        "required": "false",
+        "type": "text"
+    },
+    {
+        "type": "end_group"
+    },
+    {
         "appearance": "field-list",
         "label": "Before you leave...",
         "name": "notes_page",
-        "survey": [
-            {
-                "type": "text",
-                "appearance": "w4 multiline",
-                "label": "Notes",
-                "name": "notes",
-                "hint": "Have feedback or comments? Share them here."
-            }
-        ]
+        "required": "false",
+        "type": "begin_group"
+    },
+    {
+        "appearance": "w4 multiline",
+        "hint": "Have feedback or comments? Share them here.",
+        "label": "\ud83d\udcac Notes",
+        "name": "notes",
+        "required": "false",
+        "type": "text"
+    },
+    {
+        "appearance": "w4",
+        "label": "Thanks for your contribution! \u24d8 Learn more about EwA's participatory science volunteer program at www.earthwiseaware.org/citizen-science/",
+        "name": "intro_note_001",
+        "required": "false",
+        "type": "note"
+    },
+    {
+        "type": "end_group"
+    },
+    {
+        "calculation": "'vJbnP7bVNV9crgXpf9e3gn'",
+        "name": "__version__",
+        "type": "calculate"
     }
 ]

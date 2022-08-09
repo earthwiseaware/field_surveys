@@ -1,67 +1,69 @@
 {
-    "yes_no": {
-        "yes": "Yes",
-        "no": "No"
+    "activity": {
+        "cleaning": "Cleaning",
+        "feeding": "Feeding",
+        "foraging": "Foraging",
+        "guarding": "Guarding",
+        "mating": "Mating",
+        "other": "Other",
+        "predator": "Preying upon",
+        "prey": "Being preyed upon",
+        "resting": "Resting",
+        "tending": "Tending"
     },
     "arthropod_order": {
-        "diptera": "Flies",
+        "anisoptera": "Damselflies and Dragonflies",
+        "aphidomorpha": "Aphids and Allies",
+        "araneae": "Spiders",
+        "blattodea": "Cockroaches",
+        "cicadomorpha": "Cicadas, Leafhoppers, and Treehoppers",
         "coleoptera": "Beetles",
+        "diptera": "Flies",
+        "hemiptera": "True Bugs",
         "hymenoptera_1": "Bees, Wasps, and Sawflies",
         "hymenoptera_2": "Ants",
         "lepidoptera": "Moths and Butterflies",
-        "hemiptera": "True Bugs",
-        "anisoptera": "Damselflies and Dragonflies",
-        "cicadomorpha": "Cicadas, Leafhoppers, and Treehoppers",
-        "aphidomorpha": "Aphids and Allies",
+        "opiliones": "Harvestman",
+        "other": "Other",
         "trichoptera": "Caddisflies",
-        "blattodea": "Cockroaches",
-        "araneae": "Spiders",
-        "opiliones": "Harvestman", 
-        "unidentified": "Unidentified",
-        "other": "Other"
-    },
-    "host_group": {
-        "angiospermae": "Flowering plants",
-        "pinopsida": "Conifers",
-        "poales": "Grasses, Sedges, Cattails, and Allies",
-        "polypodiopsida": "Ferns",
-        "bryophyta": "Mosses",
-        "fungi": "Fungi", 
-        "unidentified": "Unidentified",
-        "other": "Other"
-    },
-    "survey_method": {
-        "incidental": "Incidental",
-        "walking": "Walking",
-        "area": "Area search",
-        "other": "Other"
+        "unidentified": "Unidentified"
     },
     "developmental_stage": {
         "adult": "Adult",
         "egg": "Egg or eggsac",
         "larva": "Larva or caterpillar",
-        "pupa": "Pupa",
         "nymph": "Nymph",
-        "other": "Other"
+        "other": "Other",
+        "pupa": "Pupa"
     },
-    "activity": {
-        "mating": "Mating",
-        "resting": "Resting",
-        "feeding": "Feeding",
-        "prey": "Being preyed upon",
-        "predator": "Preying upon",
-        "guarding": "Guarding",
-        "tending": "Tending",
-        "cleaning": "Cleaning",
-        "other": "Other"
+    "host_group": {
+        "angiospermae": "Flowering plants",
+        "bryophyta": "Mosses",
+        "fungi": "Fungi",
+        "other": "Other",
+        "pinopsida": "Conifers",
+        "poales": "Grasses, Sedges, Cattails, and Allies",
+        "polypodiopsida": "Ferns",
+        "unidentified": "Unidentified"
     },
     "host_phenology": {
-        "initial": "Initial growth",
         "breaking": "Breaking leaf bud",
-        "increasing": "Increasing leaf size",
         "flowers": "Flowers",
         "fruiting": "Fruiting",
+        "increasing": "Increasing leaf size",
+        "initial": "Initial growth",
         "mature": "Mature leaf",
         "other": "Other"
+    },
+    "survey_method": {
+        "area": "Area search",
+        "incidental": "Incidental",
+        "other": "Other",
+        "transect_survey": "Transect survey",
+        "walking": "Walking"
+    },
+    "yes_no": {
+        "no": "No",
+        "yes": "Yes"
     }
 }
