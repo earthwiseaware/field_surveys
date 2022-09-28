@@ -3,42 +3,47 @@
         "cleaning": {
             "label::English (en)": "Cleaning",
             "media::image::English (en)": "",
-            "order": "8"
+            "order": "9"
         },
         "feeding": {
             "label::English (en)": "Feeding",
             "media::image::English (en)": "",
-            "order": "3"
+            "order": "4"
         },
         "foraging": {
             "label::English (en)": "Foraging",
             "media::image::English (en)": "",
-            "order": "2"
+            "order": "3"
         },
         "guarding": {
             "label::English (en)": "Guarding",
             "media::image::English (en)": "",
-            "order": "6"
+            "order": "7"
         },
         "mating": {
             "label::English (en)": "Mating",
             "media::image::English (en)": "",
             "order": ""
         },
+        "moving": {
+            "label::English (en)": "Moving",
+            "media::image::English (en)": "",
+            "order": "2"
+        },
         "other": {
             "label::English (en)": "Other",
             "media::image::English (en)": "",
-            "order": "9"
+            "order": "10"
         },
         "predator": {
             "label::English (en)": "Preying upon",
             "media::image::English (en)": "",
-            "order": "5"
+            "order": "6"
         },
         "prey": {
             "label::English (en)": "Being preyed upon",
             "media::image::English (en)": "",
-            "order": "4"
+            "order": "5"
         },
         "resting": {
             "label::English (en)": "Resting",
@@ -48,7 +53,7 @@
         "tending": {
             "label::English (en)": "Tending",
             "media::image::English (en)": "",
-            "order": "7"
+            "order": "8"
         }
     },
     "arthropod_order": {
