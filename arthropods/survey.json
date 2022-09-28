@@ -21,7 +21,7 @@
             },
             {
                 "appearance": "w4",
-                "hint::English (en)": "Help EwA document arthropod interaction networks, so that we can understand better the associations between arthropod and their host, and their activities. Thanks!",
+                "hint::English (en)": "Help EwA document arthropod interaction networks, so that we can understand better the associations between arthropod and their host, and their activities \u25a1 \u24d8 Documentation example [here](https://drive.google.com/file/d/1j2jWjASeDOLd2vzMmEd-OGqHA03J5KFA/view). Thanks! ",
                 "label::English (en)": "Welcome!",
                 "name": "intro_note",
                 "required": "false",
@@ -54,16 +54,16 @@
             },
             {
                 "appearance": "w4",
-                "label::English (en)": "Please specify",
+                "label::English (en)": "Please specify what other method you are using",
                 "name": "survey_method_other",
                 "relevant": "${survey_method} = 'other'",
-                "required": "false",
+                "required": "true",
                 "type": "text"
             },
             {
                 "constraint": ". > 0",
                 "constraint_message": "Ooops! please, enter a positive number",
-                "hint::English (en)": "Duration of the complete field survey session (in minutes)",
+                "hint::English (en)": "Duration of the survey session (in minutes)",
                 "label::English (en)": "Survey duration",
                 "name": "Survey_duration",
                 "relevant": "${survey_method} = 'transect_survey' or ${survey_method} = 'area'",
@@ -73,7 +73,7 @@
             {
                 "appearance": "w4",
                 "hint::English (en)": "Click on the target icon \u2316 to record your location. If the accuracy is large, you can click the icon again to try refining the reading.",
-                "label::English (en)": "\ud83d\uddfa\ufe0f Sighting location",
+                "label::English (en)": "\ud83d\uddfa\ufe0f Survey location",
                 "name": "location",
                 "required": "true",
                 "type": "geopoint"
@@ -97,10 +97,10 @@
             },
             {
                 "appearance": "w4",
-                "label::English (en)": "Please specify",
+                "label::English (en)": "Please specify what other arthropod group you are observing",
                 "name": "arthropod_group_other",
                 "relevant": "${arthropod_group} = 'other'",
-                "required": "false",
+                "required": "true",
                 "type": "text"
             },
             {
@@ -171,10 +171,10 @@
             },
             {
                 "appearance": "w4",
-                "label::English (en)": "Please specify",
+                "label::English (en)": "Please specify what other life stage you are observing",
                 "name": "developmental_stage_other",
                 "relevant": "${developmental_stage} = 'other'",
-                "required": "false",
+                "required": "true",
                 "type": "text"
             },
             {
@@ -188,16 +188,16 @@
             },
             {
                 "appearance": "w4",
-                "label::English (en)": "Please specify",
+                "label::English (en)": "Please specify what other activity you are observing",
                 "name": "activity_other",
                 "relevant": "${activity} = 'other'",
-                "required": "false",
+                "required": "true",
                 "type": "text"
             },
             {
                 "appearance": "w4 multiline",
-                "hint::English (en)": "If you know the family, genus, or species of the arthropod, please record it here. Any other information?",
-                "label::English (en)": "\ud83d\udcdd More info?",
+                "hint::English (en)": "If you know the family, genus, or species of the arthropod, please record it here. ",
+                "label::English (en)": "\ud83d\udcdd Bug notes: species name, genus, or family? More info?",
                 "name": "arthropod_more",
                 "required": "false",
                 "type": "text"
@@ -228,10 +228,10 @@
             },
             {
                 "appearance": "w4",
-                "label::English (en)": "Please specify",
+                "label::English (en)": "Please specify that other host group you are observing",
                 "name": "host_group_other",
                 "relevant": "${host_group} = 'other'",
-                "required": "false",
+                "required": "true",
                 "type": "text"
             },
             {
@@ -263,16 +263,16 @@
             },
             {
                 "appearance": "w4",
-                "label::English (en)": "Please specify",
+                "label::English (en)": "Please specify what other phenophase(s) you are observing",
                 "name": "host_phenology_other",
                 "relevant": "selected(${host_phenology},'other')",
-                "required": "false",
+                "required": "true",
                 "type": "text"
             },
             {
                 "appearance": "w4 multiline",
-                "hint::English (en)": "If you know the family, genus, or species of the host, please record it here. Any other information?",
-                "label::English (en)": "\ud83d\udcdd More info?",
+                "hint::English (en)": "If you know the family, genus, or species of the host, please record it here. ",
+                "label::English (en)": "\ud83d\udcdd Host notes: species name, genus, or family? More info?",
                 "name": "host_more",
                 "relevant": "${has_host} = 'yes'",
                 "required": "false",
